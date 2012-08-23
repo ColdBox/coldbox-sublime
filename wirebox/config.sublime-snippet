@@ -51,7 +51,7 @@ component extends="coldbox.system.ioc.config.Binder"{
 
 }
 ]]></content>
-	<tabTrigger>wirebox-config</tabTrigger>
+	<tabTrigger>binder</tabTrigger>
 	<scope>source,text</scope>
 	<description>WireBox Configuration Object</description>
 </snippet>
