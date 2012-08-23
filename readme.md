@@ -1,6 +1,6 @@
 # A ColdBox Platform Bundle for Sublime text 2
 
-Get the latest Sublime Text 2 beta from http://www.sublimetext.com/2.
+Get the latest Sublime Text 2 from http://www.sublimetext.com/2.
 
 ## Currently supported features
 
@@ -48,20 +48,26 @@ Get the latest Sublime Text 2 beta from http://www.sublimetext.com/2.
 
 ## Installation instructions : 
 
-### Mac 
+### With Package Control ###
+
+If you have the [Package Control][package_control] package installed, you can install *ColdBox Platform Bundle* from inside Sublime Text itself. Open the Command Palette and select "Package Control: Install Package", then search for *ColdBox*.
+
+### Without Package Control ###
+
+#### Mac 
 
     $ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
     $ git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
     
-### Linux (Ubuntu like distros)
+#### Linux (Ubuntu like distros)
 
     $ cd ~/.config/sublime-text-2/Packages/
     $ git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
 
-### Windows 7:
+#### Windows 7:
 
     Copy the directory to: "C:\Users\<username>\AppData\Roaming\Sublime Text 2\Packages"
 
-### Windows XP:
+#### Windows XP:
 
     Copy the directory to: "C:\Documents and Settings\<username>\Application Data\Sublime Text 2\Packages"
