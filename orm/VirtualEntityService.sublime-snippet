@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+/**
+* A ColdBox Enabled virtual entity service
+*/
+component extends="coldbox.system.orm.hibernate.VirtualEntityService" singleton{
+	
+	/**
+	* Constructor
+	*/
+	function init(){
+		
+		// init super class
+		super.init(entityName="${1:Entityname}");
+		
+		// Use Query Caching
+	    setUseQueryCaching( ${2:false} );
+	    // Query Cache Region
+	    setQueryCacheRegion( '${3:query.${1}}' );
+	    // EventHandling
+	    setEventHandling( ${4:true} );
+	    
+	    ${0}
+
+	    return this;
+	}
+	
+}
+]]></content>
+	<tabTrigger>virtualservice</tabTrigger>
+	<scope>source,text</scope>
+	<description>Create a ColdBox Virtual Entity Service</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+/**
+* Setter injection for ${1:ID}
+*/
+void fuction set${1}(required ${1}) inject="id:${1}"{
+	variables.${1} = arguments.${1};
+}
+]]></content>
+<tabTrigger>setter</tabTrigger>
+<scope>source.cfscript</scope>
+<description>Setter Injection</description>
+</snippet>

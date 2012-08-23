@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+/**
+* A cool ${1:EntityName} entity
+*/
+component persistent="true" table="${2:TableName}"{
+
+	// Primary Key
+	property name="id" fieldtype="id" column="id" generator="${3:native}";
+	
+	// Properties
+	${0}
+	
+	// Validation
+	this.constraints = {
+		// Example: age = { required=true, min="18", type="numeric" }
+	};
+	
+	// Constructor
+	function init(){
+		
+		return this;
+	}
+}
+
+]]></content>
+	<tabTrigger>entity</tabTrigger>
+	<scope>source,text</scope>
+	<description>Create an ORM Entity</description>
+</snippet>

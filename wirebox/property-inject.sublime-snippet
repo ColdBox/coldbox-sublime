@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+property name="${1}" inject="${2:id}";
+]]></content>
+<tabTrigger>inject</tabTrigger>
+<scope>source.cfscript</scope>
+<description>Property Injection</description>
+</snippet>

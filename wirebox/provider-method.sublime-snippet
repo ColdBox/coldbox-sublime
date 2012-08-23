@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+/**
+* Provider of ${1:Provider} objects
+*/
+any function get${1} provider="${1}"{}
+]]></content>
+<tabTrigger>provider</tabTrigger>
+<scope>source.cfscript</scope>
+<description>Provider Method</description>
+</snippet>

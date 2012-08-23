@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+component extends="coldbox.system.testing.BasePluginTest" model="${1:ModelPath}"{
+	
+	/**
+	* You can remove this setup method if you do not have anything to setup
+	*/
+	void function setup(){
+		super.setup();
+		
+		// model constructor
+		model.init();
+	}
+
+}
+]]></content>
+	<tabTrigger>modelTest</tabTrigger>
+	<scope>source,text</scope>
+	<description>ColdBox Model Test</description>
+</snippet>

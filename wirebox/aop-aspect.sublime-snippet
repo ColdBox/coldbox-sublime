@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+/**
+* ${1:My AOP Aspect}
+**/
+component implements="coldbox.system.aop.MethodInterceptor" accessors="true"{
+	
+	/**
+	* Constructor
+	*/
+	function init(){
+		return this;		
+	}
+	
+	/**
+	* The AOP method invocation
+	*/
+	any function invokeMethod(invocation) output=false{
+		
+		// proceed invocation
+		return arguments.invocation.proceed();
+	}
+    	
+}
+]]></content>
+	<tabTrigger>aspect</tabTrigger>
+	<scope>source,text</scope>
+	<description>WireBox AOP Aspect</description>
+</snippet>

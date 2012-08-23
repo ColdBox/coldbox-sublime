@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+component extends="coldbox.system.testing.BaseInterceptorTest" interceptor="${1:InterceptorPath}"{
+	
+	/**
+	* You can remove this setup method if you do not have anything to setup
+	*/
+	void function setup(){
+		// interceptor configuration properties, if any
+		configProperties = {};
+		// init and configure interceptor
+		super.setup();
+		// we are now ready to test this interceptor
+	}
+	
+	function testConfigure(){
+		// any mocking here
+		
+		// test configure
+		interceptor.configure();
+	}
+
+}
+]]></content>
+	<tabTrigger>interceptorTest</tabTrigger>
+	<scope>source,text</scope>
+	<description>ColdBox Interceptor Test</description>
+</snippet>

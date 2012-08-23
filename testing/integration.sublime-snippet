@@ -1,0 +1,31 @@
+<snippet>
+<content><![CDATA[
+component extends="coldbox.system.testing.BaseTestCase" appMapping="${1:/}"{
+	
+	/**
+	* You can remove this setup method if you do not have anything to setup
+	*/
+	void function setup(){
+		super.setup();
+		
+		// Your own setup here if needed
+		
+	}
+
+	function testIndex(){
+
+		// Put incoming variables here: URL.XX or FORM.XX
+
+		// Execute an Action
+		var event = execute("handler.index");
+
+		// Assert Below
+		${0}
+	}
+
+}
+]]></content>
+	<tabTrigger>integrationTest</tabTrigger>
+	<scope>source,text</scope>
+	<description>ColdBox Integration Test</description>
+</snippet>

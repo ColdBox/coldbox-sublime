@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+/**
+* ${1} interception point
+*/
+function ${1}(required event, required interceptData){
+	${0}
+}
+]]></content>
+	<tabTrigger>point</tabTrigger>
+	<scope>source,text</scope>
+	<description>ColdBox Interception Point</description>
+</snippet>

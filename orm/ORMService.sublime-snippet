@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+/**
+* A ColdBox Generic ORM entity service
+*/
+component extends="coldbox.system.orm.hibernate.BaseORMService" singleton{
+	
+	/**
+	* Constructor
+	*/
+	function init(){
+		
+		// init super class
+		super.init();
+		
+		// Use Query Caching
+	    setUseQueryCaching( ${1:false} );
+	    // Query Cache Region
+	    setQueryCacheRegion( '${2:query.region}' );
+	    // EventHandling
+	    setEventHandling( ${3:true} );
+	    
+	    ${0}
+
+	    return this;
+	}
+	
+}
+]]></content>
+	<tabTrigger>ormservice</tabTrigger>
+	<scope>source,text</scope>
+	<description>Create a ColdBox Generic ORM Entity Service</description>
+</snippet>
