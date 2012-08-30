@@ -1,0 +1,34 @@
+{
+    "scope": "meta.name.interpolated.hash - string, source.cfscript - source.sql - text.html.cfm - string - meta - comment, source.cfscript.embedded.cfml - string, source.sql, text",
+    "completions":
+    [
+        //other
+        { "trigger": "includeUDF\tfn. (ColdBox)", "contents": "includeUDF(${1:\"${2:string}\"});"},
+
+        // event
+        { "trigger": "event.setView\tfn. (ColdBox)", "contents": "setView(${1:\"${2:string}\"});"},
+        { "trigger": "event.setLayout\tfn. (ColdBox)", "contents": "setLayout(${1:\"${2:string}\"});"},
+        { "trigger": "event.renderData\tfn. (ColdBox)", "contents": "renderData(type=\"\",data=\"\",contentType=\"\",encoding=\"utf-8\",statusCode=200,statusText=\"success\",location=\"\",jsonCallback=\"\",jsonQueryFormat=\"query\",jsonAsText=false,xmlColumnList=\"\",xmlUseCDATA=false,xmlListDelimiter=\",\",xmlRootName=\"\",pdfArgs=\"\");"},
+        { "trigger": "event.noLayout\tfn. (ColdBox)", "contents": "noLayout();"},
+        { "trigger": "event.showDebugPanel\tfn. (ColdBox)", "contents": "showDebugPanel(false);"},
+        { "trigger": "event.isProxyRequest\tfn. (ColdBox)", "contents": "isProxyRequest();"},
+        { "trigger": "event.isAjax\tfn. (ColdBox)", "contents": "isAjax();"},
+        { "trigger": "event.getCurrentView\tfn. (ColdBox)", "contents": "getCurrentView();"},
+        { "trigger": "event.getCurrentLayout\tfn. (ColdBox)", "contents": "getCurrentLayout();"},
+
+        // handler
+        { "trigger": "runEvent\tfn. (ColdBox)", "contents": "runEvent(event=\"\",prepostExempt=false,private=false,eventArguments=\"\");"},
+        { "trigger": "setNextEvent\tfn. (ColdBox)", "contents": "setNextEvent(event=\"\",queryString=\"\",addToken=\"\",persist=\"\",persistStruct=\"\",ssl=false,baseURL=\"\",postProcessExempt=false,URL=\"\",URI=\"\",statusCode=\"\");"},
+        { "trigger": "populateModel\tfn. (ColdBox)", "contents": "populateModel(mode=\"\",scope=\"\",trustedSetter=false,include=\"\",exclude=\"\");"},
+        { "trigger": "renderView\tfn. (ColdBox)", "contents": "renderView(view=\"\",cache=false,cacheTimeout=30)"},
+        { "trigger": "renderLayout\tfn. (ColdBox)", "contents": "renderLayout(layout=\"\",view=\"\",module=\"\",args=\"\")"},
+
+        //populate
+        { "trigger": "populateFromJSON\tfn. (ColdBox)", "contents": "populateFromJSON();"},
+        { "trigger": "populateFromQuery\tfn. (ColdBox)", "contents": "populateFromQuery();"},
+        { "trigger": "populateFromQueryWithPrefix\tfn. (ColdBox)", "contents": "populateFromQueryWithPrefix();"},
+        { "trigger": "populateFromStruct\tfn. (ColdBox)", "contents": "populateFromStruct();"},
+        { "trigger": "populateFromXML\tfn. (ColdBox)", "contents": "populateFromXML();"}
+
+    ]
+}
