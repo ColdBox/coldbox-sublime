@@ -1,6 +1,6 @@
 <snippet>
 <content><![CDATA[
-component extends="coldbox.system.testing.BasePluginTest" model="${1:ModelPath}"{
+component extends="coldbox.system.testing.BaseModelTest" model="${1:ModelPath}"{
 	
 	/**
 	* You can remove this setup method if you do not have anything to setup
