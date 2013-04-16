@@ -1,8 +1,20 @@
-# A ColdBox Platform Bundle for Sublime text 2
+# A ColdBox Platform Bundle v1.5 for Sublime text 2
 
 Get the latest Sublime Text 2 from http://www.sublimetext.com/2.
 
 ## Currently supported features
+
+### Code Insight
+Code completion for all major ColdBox functions and scopes:
+
+- `controller ➝` : "coldbox.system.web.Controller",
+- `event ➝` : "coldbox.system.web.context.RequestContext",
+- `flash ➝` : "coldbox.system.web.flash.AbstractFlashScope",
+- `log ➝` : "coldbox.system.logging.Logger",
+- `logbox ➝` : "coldbox.system.logging.LogBox",
+- `binder ➝` : "coldbox.system.ioc.config.Binder",
+- `wirebox ➝` : "coldbox.system.ioc.Injector",
+- `cachebox ➝` : "coldbox.system.cache.CacheFactory"
 
 ### Handler Code Snippets
 
@@ -24,10 +36,13 @@ Get the latest Sublime Text 2 from http://www.sublimetext.com/2.
 ### Code Skeleton Snippets
 
 - `handler ➝` : Creates a ColdBox Event Handler
-- `interceptor ➝` : Creates an Interceptor
-- `model ➝` : Creates a model object
-- `plugin ➝` : Creates a plugin
+- `interceptor ➝` : Creates a ColdBox Interceptor
 - `point ➝` : Creates a new interception point method
+- `model ➝` : Creates a model object
+- `plugin ➝` : Creates a ColdBox plugin
+- `config ➝` : Creates a new ColdBox.cfc configuration file
+- `cachebox-config ➝` : Creates a new CacheBox.cfc configuration file
+- `routes ➝` : Creates a new routing file
 
 ### Unit-Integration Testing Snippets
 
@@ -71,3 +86,22 @@ If you have the [Package Control][package_control] package installed, you can in
 #### Windows XP:
 
     Copy the directory to: "C:\Documents and Settings\<username>\Application Data\Sublime Text 2\Packages"
+
+## References:
+
+- Sublimetext 2 API - http://www.sublimetext.com/docs/2/api_reference.html
+- How to create a plugin: http://net.tutsplus.com/tutorials/python-tutorials/how-to-create-a-sublime-text-2-plugin/
+- Unoffical (but very good) docs - http://sublimetext.info/docs/en/
+- ColdFusion Sublime Text bundle - https://github.com/SublimeText/ColdFusion
+- MXUnit Sublime Text bundle - https://github.com/mxunit/sublime-text-2-mxunit
+
+## Changelog
+### v1.5
+- Handler snippet fixes
+- Model skeleton fix
+- New `config` skeleton for the Configuration File
+- New `cachebox-config` skeleton for a CacheBox Configuration File
+- New `routes` skeleton for a routes.cfm template
+- Completions for ALL ColdBox related functions and major scopes
+
+### v1.0 Initial Release

@@ -8,11 +8,11 @@ component{
 	any function init(){
 		
 		// Plugin Properties
-		setPluginName("${2}");
-		setPluginVersion("${3:1.0}");
-		setPluginDescription("${4:My Plugin}");
-		setPluginAuthor("${5:$TM_FULLNAME}");
-		setPluginAuthorURL("${6:http://www.}");
+		setPluginName( "${2}" );
+		setPluginVersion( "${3:1.0}" );
+		setPluginDescription( "${4:My Plugin}" );
+		setPluginAuthor( "${5:$TM_FULLNAME}" );
+		setPluginAuthorURL( "${6:http://www.}" );
 		
 		${0}
 
