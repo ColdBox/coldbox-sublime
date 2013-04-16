@@ -65,7 +65,7 @@ Code completion for all major ColdBox functions and scopes:
 
 ### With Package Control ###
 
-If you have the [Package Control][package_control] package installed, you can install *ColdBox Platform Bundle* from inside Sublime Text itself. Open the Command Palette and select "Package Control: Install Package", then search for *ColdBox*.
+If you have the [Package Control](http://wbond.net/sublime_packages/package_control) package installed, you can install *ColdBox Platform Bundle* from inside Sublime Text itself. Open the Command Palette and select "Package Control: Install Package", then search for *ColdBox*.
 
 ### Without Package Control ###
 
