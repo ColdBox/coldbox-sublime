@@ -5,7 +5,7 @@ component{
 	
 	// Configure ColdBox Application
 	function configure(){
-
+		renderView( view=any, cache=any, cacheTimeout=any, cacheLastAccessTimeout=any, cacheSuffix=any, module=any, args={}, collection=any, collectionAs=any )
 		// coldbox directives
 		coldbox = {
 			//Application Setup
