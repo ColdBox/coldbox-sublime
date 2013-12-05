@@ -1,4 +1,4 @@
-# A ColdBox Platform Bundle v1.5 for Sublime text 2
+# A ColdBox Platform Bundle v1.7 for Sublime text 2
 
 Get the latest Sublime Text 2 from http://www.sublimetext.com/2.
 
@@ -43,6 +43,32 @@ Code completion for all major ColdBox functions and scopes:
 - `config ➝` : Creates a new ColdBox.cfc configuration file
 - `cachebox-config ➝` : Creates a new CacheBox.cfc configuration file
 - `routes ➝` : Creates a new routing file
+
+### TestBox Snippets
+
+- `bdd ➝` : Creates a new BDD Test Bundle CFC
+- `bddi ➝` : Creates a new BDD Test Bundle CFC via Inheritance
+- `unit ➝` : Creates a new xUnit Test Bundle CFC
+- `uniti ➝` : Creates a new xUnit Test Bundle CFC via Inheritance
+- `describe ➝` : A `describe` suite
+- `describeFull ➝` : A `describe` suite with all arguments
+- `it ➝` : A test spec
+- `itFull ➝` : A test spec with all arguments
+- `expect ➝` : Starts an expectation DSL with a `toBe()` addition
+- `expectFalse ➝` : Does a false expectation expression
+- `expectTrue ➝` : Does a true expectation expression
+- `expectToThrow ➝` : Starts an expectation that throws an exception
+- `afterAll ➝` : An `afterAll()` BDD life-cycle method
+- `beforeAll ➝` : An `beforeAll()` BDD life-cycle method
+- `aftereach ➝` : An `afterEach()` BDD closure
+- `beforeeach ➝` : A `beforeEach()` BDD closure
+- `afterTests ➝` : An `afterTests()` xUnit life-cycle method
+- `beforeTests ➝` : An `beforeTests()` xUnit life-cycle method
+- `teardown ➝` : An `teardown()` xUnit life-cycle method
+- `setup ➝` : An `setup()` xUnit life-cycle method
+- `debug ➝` : Writes up a non-duplicate `debug()` call
+- `debugduplicate ➝` : Writes up a `debug()` call with duplicate
+- `console ➝` : TestBox send some output to the console
 
 ### Unit-Integration Testing Snippets
 
@@ -96,6 +122,10 @@ If you have the [Package Control](http://wbond.net/sublime_packages/package_cont
 - MXUnit Sublime Text bundle - https://github.com/mxunit/sublime-text-2-mxunit
 
 ## Changelog
+### v1.7
+- TestBox additions
+- Testing additions
+
 ### v1.5
 - Handler snippet fixes
 - Model skeleton fix

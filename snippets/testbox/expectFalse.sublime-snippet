@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+expect(	${1} ).toBeFalse();
+]]></content>
+	<tabTrigger>expectFalse</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Expect False</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+expect(	${1} ).toBeTrue();
+]]></content>
+	<tabTrigger>expectTrue</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Expect True</description>
+</snippet>

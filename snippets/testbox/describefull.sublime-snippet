@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+describe( title="${1:A suite}", labels="", asyncAll=false, skip=false, body=function(){
+${0}
+
+});]]></content>
+	<tabTrigger>describeFull</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox BDD Suite With Arguments</description>
+</snippet>

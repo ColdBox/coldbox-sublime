@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+console( $1 );
+]]></content>
+	<tabTrigger>console</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Send To Console</description>
+</snippet>

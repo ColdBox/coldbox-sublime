@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+debug( var=$1, duplicate=true );
+]]></content>
+	<tabTrigger>debugduplicate</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Debug Duplicate</description>
+</snippet>

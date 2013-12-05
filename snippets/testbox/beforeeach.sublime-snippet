@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+beforeEach(function( currentSpec ){
+	${0}
+});]]></content>
+	<tabTrigger>before</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox BDD Before Each</description>
+</snippet>

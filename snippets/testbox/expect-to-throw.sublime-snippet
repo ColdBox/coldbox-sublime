@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+expect(	function(){
+	${1}
+} ).toThrow();
+]]></content>
+	<tabTrigger>expectToThrow</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Expect To Throw</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+it( title="${1:A Spec}", labels="", skip=false, body=function(){
+${0}
+});]]></content>
+	<tabTrigger>itFull</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Spec With Arguments</description>
+</snippet>
