@@ -3,7 +3,7 @@
 /**
 * ${1:My xUnit Test}
 */
-component{
+component extends="testbox.system.BaseSpec"{
 	
 /*********************************** LIFE CYCLE Methods ***********************************/
 

@@ -47,9 +47,7 @@ Code completion for all major ColdBox functions and scopes:
 ### TestBox Snippets
 
 - `bdd ➝` : Creates a new BDD Test Bundle CFC
-- `bddi ➝` : Creates a new BDD Test Bundle CFC via Inheritance
 - `unit ➝` : Creates a new xUnit Test Bundle CFC
-- `uniti ➝` : Creates a new xUnit Test Bundle CFC via Inheritance
 - `describe ➝` : A `describe` suite
 - `describeFull ➝` : A `describe` suite with all arguments
 - `it ➝` : A test spec
