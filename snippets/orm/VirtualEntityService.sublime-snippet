@@ -3,7 +3,7 @@
 /**
 * A ColdBox Enabled virtual entity service
 */
-component extends="coldbox.system.orm.hibernate.VirtualEntityService" singleton{
+component extends="cborm.models.VirtualEntityService" singleton{
 	
 	/**
 	* Constructor

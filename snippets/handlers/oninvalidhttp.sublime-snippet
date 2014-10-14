@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+/**
+* Executes when an invalid HTTP method is called
+*/
+function onInvalidHTTPMethod( event, rc, prc, faultAction, eventArguments ){
+	${0}
+}
+]]></content>
+<tabTrigger>onhttp</tabTrigger>
+<scope>source.cfscript</scope>
+<description>OnInvalidHTTPMethod Action</description>
+</snippet>

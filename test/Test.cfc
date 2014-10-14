@@ -5,21 +5,19 @@ component{
 	
 	// Configure ColdBox Application
 	function configure(){
-		renderView( view=any, cache=any, cacheTimeout=any, cacheLastAccessTimeout=any, cacheSuffix=any, module=any, args={}, collection=any, collectionAs=any )
+
 		// coldbox directives
 		coldbox = {
 			//Application Setup
-			appName 				= "Your app name here",
+			appName 				= "Hello",
 			eventName 				= "event",
 
 			//Development Settings
-			debugMode				= true,
-			debugPassword			= "",
 			reinitPassword			= "",
 			handlersIndexAutoReload = true,
 
 			//Implicit Events
-			defaultEvent			= "General.index",
+			defaultEvent			= "Main.index",
 			requestStartHandler		= "Main.onRequestStart",
 			requestEndHandler		= "",
 			applicationStartHandler = "Main.onAppInit",
@@ -29,7 +27,8 @@ component{
 			missingTemplateHandler	= "",
 
 			//Extension Points
-			UDFLibraryFile 				= "includes/helpers/ApplicationHelper.cfm",
+			ApplicationHelper			= "includes/helpers/ApplicationHelper.cfm",
+			ViewsHelper					= "",
 			coldboxExtensionsLocation 	= "",
 			modulesExternalLocation		= [],
 			pluginsExternalLocation 	= "",
@@ -103,32 +102,9 @@ component{
 			}
 		];
 
-		// Object & Form Validation
-		validation = {
-			// manager = "class path" or none at all to use ColdBox as the validation manager
-			// The shared constraints for your application.
-			sharedConstraints = {
-				// EX
-				// myForm = { name={required=true}, age={type="numeric",min="18"} }
-			}
-		};
-
+		
 
 		/*
-
-		// ORM services, injection, etc
-		orm = {
-			// entity injection
-			injection = {
-				// enable it
-				enabled = true,
-				// the include list for injection
-				include = "",
-				// the exclude list for injection
-				exclude = ""
-			}
-		};
-
 		// flash scope configuration
 		flash = {
 			scope = "session,client,cluster,ColdboxCache,or full path",
@@ -156,60 +132,6 @@ component{
 			layoutsLocation  = "layouts",
 			modelsLocation 	 = "model",
 			eventAction 	 = "index"
-		};
-
-		//IOC Integration
-		ioc = {
-			framework 		= "lightwire",
-			reload 	  	  	= true,
-			objectCaching 	= false,
-			definitionFile  = "config/coldspring.xml.cfm",
-			parentFactory 	= {
-				framework = "coldspring",
-				definitionFile = "config/parent.xml.cfm"
-			}
-		};
-
-		//Debugger Settings
-		debugger = {
-			enableDumpVar = false,
-			persistentRequestProfilers = true,
-			maxPersistentRequestProfilers = 10,
-			maxRCPanelQueryRows = 50,
-			showRCSnapshots = false,
-			//Panels
-			showTracerPanel = true,
-			expandedTracerPanel = true,
-			showInfoPanel = true,
-			expandedInfoPanel = true,
-			showCachePanel = true,
-			expandedCachePanel = true,
-			showRCPanel = true,
-			expandedRCPanel = true,
-			showModulesPanel = true,
-			expandedModulesPanel = false
-		};
-
-		//Mailsettings
-		mailSettings = {
-			server = "",
-			username = "",
-			password = "",
-			port = 25
-		};
-
-		//i18n & Localization
-		i18n = {
-			defaultResourceBundle = "includes/i18n/main",
-			defaultLocale = "en_US",
-			localeStorage = "session",
-			unknownTranslation = "**NOT FOUND**"
-		};
-
-		//webservices
-		webservices = {
-			testWS = "http://www.test.com/test.cfc?wsdl",
-			AnotherTestWS = "http://www.coldbox.org/distribution/updatews.cfc?wsdl"
 		};
 
 		//Datasources

@@ -1,19 +1,11 @@
 <snippet>
 <content><![CDATA[
-function test${1:Action}(){
-	var event = "";
-	
-	//Place any variables on the form or URL scope to test the handler.
-	//URL.name = "luis"
-	
-	// Execute Event
-	event = execute("${2:Handler}.${1}");
-	
-	//Do your asserts below
-	${0}
-}
+it( "${1:}", function(){
+	var event = execute( event="${2:main.index}", renderResults=${3:true|false} );
+
+});
 ]]></content>
-	<tabTrigger>integrationTestCase</tabTrigger>
+	<tabTrigger>testaction</tabTrigger>
 	<scope>source,text</scope>
 	<description>ColdBox Integration Test Case</description>
 </snippet>

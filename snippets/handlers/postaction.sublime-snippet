@@ -3,7 +3,7 @@
 /**
 * Executes after your '${1} action only
 */
-any function post${1}(event,rc,prc,eventArguments){
+any function post${1}( event, rc, prc, eventArguments ){
 	${0}
 }
 ]]></content>

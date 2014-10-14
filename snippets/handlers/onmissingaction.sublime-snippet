@@ -3,7 +3,7 @@
 /**
 * Executes when you execute an action that is missing
 */
-function onMissingAction(event,rc,prc,missingAction,eventArguments){
+function onMissingAction( event, rc, prc, missingAction, eventArguments ){
 	${0}
 }
 ]]></content>

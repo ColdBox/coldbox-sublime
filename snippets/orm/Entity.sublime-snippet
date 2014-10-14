@@ -16,7 +16,9 @@ component persistent="true" table="${2:TableName}"{
 		// Example: age = { required=true, min="18", type="numeric" }
 	};
 	
-	// Constructor
+	/**
+	* Constructor
+	*/ 
 	function init(){
 		
 		return this;

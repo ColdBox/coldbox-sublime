@@ -5,6 +5,9 @@
 */
 component{
 	
+	/**
+	* Constructor
+	*/
 	any function init(){
 		${0}
 		return this;

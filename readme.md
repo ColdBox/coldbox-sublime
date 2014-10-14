@@ -1,25 +1,46 @@
-# A ColdBox Platform Bundle v1.7 for Sublime text 2
+# A ColdBox Platform Bundle v1.8.0 for Sublime Text 2/3
 
-Get the latest Sublime Text 2 from http://www.sublimetext.com/2.
+Get the latest Sublime Text 2/3 from http://www.sublimetext.com/2.
+
+## Target Platforms
+- ColdBox 4.X.X
+- TestBox 2.X.X
 
 ## Currently supported features
 
-### Code Insight
-Code completion for all major ColdBox functions and scopes:
+This bundle includes functionality not only for ColdBox MVC, but also for TestBox BDD/TDD, MockBox, WireBox, CacheBox and LogBox.
 
+### Code Insight
+Code completion for all major ColdBox + TestBox functions and scopes:
+
+- `binder ➝` : "coldbox.system.ioc.config.Binder",
+- `cachebox ➝` : "coldbox.system.cache.CacheFactory"
 - `controller ➝` : "coldbox.system.web.Controller",
 - `event ➝` : "coldbox.system.web.context.RequestContext",
 - `flash ➝` : "coldbox.system.web.flash.AbstractFlashScope",
+- `html ➝` : "coldbox.system.core.dynamic.HTMLHelper"
 - `log ➝` : "coldbox.system.logging.Logger",
 - `logbox ➝` : "coldbox.system.logging.LogBox",
-- `binder ➝` : "coldbox.system.ioc.config.Binder",
 - `wirebox ➝` : "coldbox.system.ioc.Injector",
-- `cachebox ➝` : "coldbox.system.cache.CacheFactory"
+
+### Code Skeleton Snippets
+
+- `cachebox-config ➝` : Creates a new CacheBox.cfc configuration file
+- `config ➝` : Creates a new ColdBox.cfc configuration file
+- `bdd ➝` : Creates a TestBox BDD Bundle
+- `box ➝` : Creates a `box.json` template
+- `handler ➝` : Creates a ColdBox Event Handler
+- `interceptor ➝` : Creates a ColdBox Interceptor
+- `model ➝` : Creates a model object
+- `routes ➝` : Creates a new routing file
+- `point ➝` : Creates a new interception point method
+- `unit ➝` : Creates a TestBox TDD xUnit Bundle
 
 ### Handler Code Snippets
 
 - `action ➝` : Creates a handler action
 - `onerror ➝` : Creates an *onError()* implicit action 
+- `onhttp ➝` : Creates an *onInvalidHTTPMethod()* implict action
 - `onma ➝` : Creates an *onMissingAction()* implicit action 
 - `postaction ➝` : Creates a *postXXX()* implicit action 
 - `post ➝` : Creates a *postHandler()* implicit action 
@@ -33,49 +54,37 @@ Code completion for all major ColdBox functions and scopes:
 - `ormservice ➝` : Creates a Base ORM service
 - `virtualservice ➝` : Creates a virtual entity service
 
-### Code Skeleton Snippets
-
-- `handler ➝` : Creates a ColdBox Event Handler
-- `interceptor ➝` : Creates a ColdBox Interceptor
-- `point ➝` : Creates a new interception point method
-- `model ➝` : Creates a model object
-- `plugin ➝` : Creates a ColdBox plugin
-- `config ➝` : Creates a new ColdBox.cfc configuration file
-- `cachebox-config ➝` : Creates a new CacheBox.cfc configuration file
-- `routes ➝` : Creates a new routing file
-
 ### TestBox Snippets
 
+- `afterAll ➝` : An `afterAll()` BDD life-cycle method
+- `aftereach ➝` : An `afterEach()` BDD closure
+- `afterTests ➝` : An `afterTests()` xUnit life-cycle method
 - `bdd ➝` : Creates a new BDD Test Bundle CFC
-- `unit ➝` : Creates a new xUnit Test Bundle CFC
+- `beforeAll ➝` : An `beforeAll()` BDD life-cycle method
+- `beforeeach ➝` : A `beforeEach()` BDD closure
+- `beforeTests ➝` : An `beforeTests()` xUnit life-cycle method
+- `console ➝` : TestBox send some output to the console
+- `debug ➝` : Writes up a non-duplicate `debug()` call
+- `debugduplicate ➝` : Writes up a `debug()` call with duplicate
 - `describe ➝` : A `describe` suite
 - `describeFull ➝` : A `describe` suite with all arguments
-- `it ➝` : A test spec
-- `itFull ➝` : A test spec with all arguments
 - `expect ➝` : Starts an expectation DSL with a `toBe()` addition
 - `expectFalse ➝` : Does a false expectation expression
 - `expectTrue ➝` : Does a true expectation expression
 - `expectToThrow ➝` : Starts an expectation that throws an exception
-- `afterAll ➝` : An `afterAll()` BDD life-cycle method
-- `beforeAll ➝` : An `beforeAll()` BDD life-cycle method
-- `aftereach ➝` : An `afterEach()` BDD closure
-- `beforeeach ➝` : A `beforeEach()` BDD closure
-- `afterTests ➝` : An `afterTests()` xUnit life-cycle method
-- `beforeTests ➝` : An `beforeTests()` xUnit life-cycle method
-- `teardown ➝` : An `teardown()` xUnit life-cycle method
+- `it ➝` : A test spec
+- `itFull ➝` : A test spec with all arguments
 - `setup ➝` : An `setup()` xUnit life-cycle method
-- `debug ➝` : Writes up a non-duplicate `debug()` call
-- `debugduplicate ➝` : Writes up a `debug()` call with duplicate
-- `console ➝` : TestBox send some output to the console
+- `teardown ➝` : An `teardown()` xUnit life-cycle method
+- `unit ➝` : Creates a new xUnit Test Bundle CFC
 
-### Unit-Integration Testing Snippets
+### ColdBox Testing Snippets
 
 - `handlerTest ➝` : Creates a ColdBox Event Handler test case
-- `integrationTest ➝` : Creates a top down integration test case
-- `integrationTestCase ➝` : Creates a test case for an event action
+- `integration ➝` : Creates a top down integration BDD test case
 - `interceptorTest ➝` : Creates an Interceptor test case
 - `modelTest ➝` : Creates a model test case
-- `pluginTest ➝` : Creates a plugin test case
+- `testaction ➝` : Creates an integration spec case for an event action
 
 ### WireBox Code Snippets
 
@@ -120,11 +129,16 @@ If you have the [Package Control](http://wbond.net/sublime_packages/package_cont
 - MXUnit Sublime Text bundle - https://github.com/mxunit/sublime-text-2-mxunit
 
 ## Changelog
-### v1.7
+### v1.8.0
+- ColdBox 4 additions/modifications
+- TestBox 2 additions/modifications
+- CommandBox integrations
+
+### v1.7.0
 - TestBox additions
 - Testing additions
 
-### v1.5
+### v1.5.0
 - Handler snippet fixes
 - Model skeleton fix
 - New `config` skeleton for the Configuration File

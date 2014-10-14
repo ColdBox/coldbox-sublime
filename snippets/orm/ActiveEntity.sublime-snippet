@@ -3,7 +3,7 @@
 /**
 * A cool ${1:EntityName} entity
 */
-component persistent="true" table="${2:TableName}" extends="coldbox.system.orm.hibernate.ActiveEntity"{
+component persistent="true" table="${2:TableName}" extends="cborm.models.ActiveEntity"{
 
 	// Primary Key
 	property name="id" fieldtype="id" column="id" generator="${3:native}";

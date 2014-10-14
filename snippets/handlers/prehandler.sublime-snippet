@@ -3,7 +3,7 @@
 /**
 * Executes before all handler actions
 */
-any function preHandler(event,rc,prc,action,eventArguments){
+any function preHandler( event, rc, prc, action, eventArguments ){
 	${0}
 }
 ]]></content>

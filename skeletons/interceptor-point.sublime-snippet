@@ -3,7 +3,7 @@
 /**
 * ${1} interception point
 */
-function ${1}(required event, required interceptData){
+function ${1}( required event, required interceptData, required buffer ){
 	${0}
 }
 ]]></content>

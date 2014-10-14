@@ -3,7 +3,7 @@
 /**
 * ${1:My Interceptor Hint}
 */
-component{
+component extends="coldbox.system.Interceptor"{
 	
 	// Configure Interceptor
 	void function configure(){

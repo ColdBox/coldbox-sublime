@@ -3,7 +3,7 @@
 /**
 * Executes after all handler actions
 */
-any function postHandler(event,rc,prc,action,eventArguments){
+any function postHandler( event, rc, prc, action, eventArguments ){
 	${0}
 }
 ]]></content>

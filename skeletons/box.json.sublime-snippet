@@ -1,0 +1,96 @@
+<snippet>
+<content><![CDATA[
+{
+    "name":"${1:My Application}",
+    "slug":"${2:myslug}",
+    "version":"${3:1.0.0}",
+    "author":"${4}",
+    "shortDescription":"${5}",
+    "location":"",
+    "directory":"",
+    "createPackageDirectory":true,
+    "packageDirectory":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "url":""
+    },
+    "bugs":"",
+    "description":"",
+    "instructions":"",
+    "changelog":"",
+    "type":"",
+    "keywords":[
+        
+    ],
+    "private":false,
+    "engines":[
+        {
+            "type":"railo",
+            "version":">=4.1.x"
+        },
+        {
+            "type":"adobe",
+            "version":">=10.0.0"
+        }
+    ],
+    "defaultEngine":"",
+    "defaultPort":0,
+    "projectURL":"",
+    "license":[
+        {
+            "type":"",
+            "url":""
+        }
+    ],
+    "contributors":[
+        
+    ],
+    "dependencies":{
+        
+    },
+    "devDependencies":{
+        
+    },
+    "installPaths":{
+        
+    },
+    "ignore":[
+        
+    ],
+    "testbox":{
+        "runner":[
+            {
+                "default":""
+            }
+        ],
+        "labels":[
+            
+        ],
+        "reporter":"",
+        "reporterResults":"",
+        "bundles":[
+            ""
+        ],
+        "directory":{
+            "mapping":"",
+            "recurse":true
+        },
+        "watchers":[
+            
+        ],
+        "notify":{
+            "emails":[
+                
+            ],
+            "growl":"",
+            "url":""
+        }
+    }
+}
+]]></content>
+	<tabTrigger>box</tabTrigger>
+	<scope>source,text,json</scope>
+	<description>Box.json Package Descriptor</description>
+</snippet>
