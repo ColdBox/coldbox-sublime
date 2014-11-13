@@ -17,7 +17,7 @@ component extends="testbox.system.BaseSpec"{
 
 /*********************************** BDD SUITES ***********************************/
 
-	function run(){
+	function run( testResults, testBox ){
 		// all your suites go here.
 		describe( "My First Suite", function(){
 

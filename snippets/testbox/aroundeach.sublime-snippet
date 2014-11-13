@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+aroundEach(function( spec, suite ){
+	${0}
+});]]></content>
+	<tabTrigger>around</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox BDD Around Each</description>
+</snippet>

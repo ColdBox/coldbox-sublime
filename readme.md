@@ -1,4 +1,4 @@
-# A ColdBox Platform Bundle v1.8.0 for Sublime Text 2/3
+# A ColdBox Platform Bundle v1.9.0 for Sublime Text 2/3
 
 Get the latest Sublime Text 2/3 from http://www.sublimetext.com/2.
 
@@ -59,6 +59,7 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `afterAll ➝` : An `afterAll()` BDD life-cycle method
 - `aftereach ➝` : An `afterEach()` BDD closure
 - `afterTests ➝` : An `afterTests()` xUnit life-cycle method
+- `aroundEach ➝` : An `aroundEach()` BDD closure
 - `bdd ➝` : Creates a new BDD Test Bundle CFC
 - `beforeAll ➝` : An `beforeAll()` BDD life-cycle method
 - `beforeeach ➝` : A `beforeEach()` BDD closure
@@ -129,6 +130,10 @@ If you have the [Package Control](http://wbond.net/sublime_packages/package_cont
 - MXUnit Sublime Text bundle - https://github.com/mxunit/sublime-text-2-mxunit
 
 ## Changelog
+
+### v1.9.0
+- TestBox 2.1 additions/modifications
+
 ### v1.8.0
 - ColdBox 4 additions/modifications
 - TestBox 2 additions/modifications
