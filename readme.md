@@ -1,4 +1,4 @@
-# A ColdBox Platform Bundle v1.9.0 for Sublime Text 2/3
+# A ColdBox Platform Bundle v2.0.0 for Sublime Text 2/3
 
 Get the latest Sublime Text 2/3 from http://www.sublimetext.com/2.
 
@@ -130,6 +130,9 @@ If you have the [Package Control](http://wbond.net/sublime_packages/package_cont
 - MXUnit Sublime Text bundle - https://github.com/mxunit/sublime-text-2-mxunit
 
 ## Changelog
+
+### v2.0.0
+- ColdBox 4 additions/modifications
 
 ### v1.9.0
 - TestBox 2.1 additions/modifications

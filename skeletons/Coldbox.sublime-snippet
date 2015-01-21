@@ -38,6 +38,7 @@ component{
 			layoutsExternalLocation 	= "",
 			handlersExternalLocation  	= "",
 			requestContextDecorator 	= "",
+			controllerDecorator 		= "",
 
 			//Error/Exception Handling
 			exceptionHandler		= "",
