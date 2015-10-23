@@ -2,6 +2,7 @@
 <content><![CDATA[
 aroundEach(function( spec, suite ){
 	${0}
+	arguments.spec.body();
 });]]></content>
 	<tabTrigger>around</tabTrigger>
 	<scope>source,text</scope>

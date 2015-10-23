@@ -27,12 +27,8 @@
     "private":false,
     "engines":[
         {
-            "type":"railo",
-            "version":">=4.1.x"
-        },
-        {
-            "type":"adobe",
-            "version":">=10.0.0"
+            "type":"",
+            "version":""
         }
     ],
     "defaultEngine":"",

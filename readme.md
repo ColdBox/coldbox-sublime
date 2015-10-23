@@ -73,11 +73,16 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `expectFalse ➝` : Does a false expectation expression
 - `expectTrue ➝` : Does a true expectation expression
 - `expectToThrow ➝` : Starts an expectation that throws an exception
+- `feature, featureFull ➝` : Starts a `feature()` block
+- `given, givenFull ➝` : Starts a `given()` block
 - `it ➝` : A test spec
 - `itFull ➝` : A test spec with all arguments
 - `setup ➝` : An `setup()` xUnit life-cycle method
+- `story, storyFull ➝` : Starts a `story()` block
 - `teardown ➝` : An `teardown()` xUnit life-cycle method
+- `then, thenFull ➝` : Starts a `then()` block
 - `unit ➝` : Creates a new xUnit Test Bundle CFC
+- `when, whenFull ➝` : Starts a `when()` block 
 
 ### ColdBox Testing Snippets
 
@@ -130,6 +135,12 @@ If you have the [Package Control](http://wbond.net/sublime_packages/package_cont
 - MXUnit Sublime Text bundle - https://github.com/mxunit/sublime-text-2-mxunit
 
 ## Changelog
+
+### v2.1.0
+- Additions of `given-when-then` scripting for BDD
+- Additions of `story-feature` scripting for BDD
+- Fixes for `aroundEach` generation
+- Updated all syntax completions
 
 ### v2.0.0
 - ColdBox 4 additions/modifications

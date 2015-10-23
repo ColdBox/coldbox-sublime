@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+when( "${1:A suite}", function(){
+${0}
+
+});]]></content>
+	<tabTrigger>when</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox BDD When</description>
+</snippet>

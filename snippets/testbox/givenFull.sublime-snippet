@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+given( title="${1:A suite}", labels="", asyncAll=false, skip=false, body=function(){
+${0}
+
+});]]></content>
+	<tabTrigger>givenFull</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox BDD Given With Arguments</description>
+</snippet>

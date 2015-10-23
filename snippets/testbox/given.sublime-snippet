@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+given( "${1:A suite}", function(){
+${0}
+
+});]]></content>
+	<tabTrigger>given</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox BDD Given</description>
+</snippet>
