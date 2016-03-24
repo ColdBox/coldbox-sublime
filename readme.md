@@ -136,6 +136,9 @@ If you have the [Package Control](http://wbond.net/sublime_packages/package_cont
 
 ## Changelog
 
+### v2.2.0
+- Added better bdd test templates, some where missing `super` calls
+
 ### v2.1.0
 - Additions of `given-when-then` scripting for BDD
 - Additions of `story-feature` scripting for BDD
