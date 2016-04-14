@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+/**
+* Executes an around handler
+*/
+function aroundHandler( event, rc, prc, targetAction, eventArguments ){
+	// Prepare action arguments
+	var args = { event = arguments.event, rc = arguments.rc, prc = arguments.prc };
+	structAppend( args, arguments.eventArguments );
+	// Execute targeted action
+	var results = arguments.targetAction( argumentCollection=args );
+	// Return results if they exist
+	if( !isNull( results ) ){
+		return results;
+	}
+}
+]]></content>
+<tabTrigger>around</tabTrigger>
+<scope>source.cfscript</scope>
+<description>AroundHandler action</description>
+</snippet>
