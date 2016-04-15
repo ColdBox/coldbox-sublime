@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+assert(	${1}, ${2:'Message'});
+]]></content>
+	<tabTrigger>assert</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Assert</description>
+</snippet>

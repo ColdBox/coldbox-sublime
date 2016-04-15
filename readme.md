@@ -22,6 +22,7 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `log ➝` : "coldbox.system.logging.Logger",
 - `logbox ➝` : "coldbox.system.logging.LogBox",
 - `wirebox ➝` : "coldbox.system.ioc.Injector",
+- `$assert` : "testbox.system.Assertion"
 
 ### Code Skeleton Snippets
 
@@ -39,6 +40,7 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 ### Handler Code Snippets
 
 - `action ➝` : Creates a handler action
+- `around` : Creates an *aroundHandler()* implicit action
 - `onerror ➝` : Creates an *onError()* implicit action 
 - `onhttp ➝` : Creates an *onInvalidHTTPMethod()* implict action
 - `onma ➝` : Creates an *onMissingAction()* implicit action 
@@ -56,6 +58,7 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 
 ### TestBox Snippets
 
+- `assert` : An `assert()` method
 - `afterAll ➝` : An `afterAll()` BDD life-cycle method
 - `aftereach ➝` : An `afterEach()` BDD closure
 - `afterTests ➝` : An `afterTests()` xUnit life-cycle method
@@ -133,39 +136,3 @@ If you have the [Package Control](http://wbond.net/sublime_packages/package_cont
 - Unoffical (but very good) docs - http://sublimetext.info/docs/en/
 - ColdFusion Sublime Text bundle - https://github.com/SublimeText/ColdFusion
 - MXUnit Sublime Text bundle - https://github.com/mxunit/sublime-text-2-mxunit
-
-## Changelog
-
-### v2.2.0
-- Added better bdd test templates, some where missing `super` calls
-
-### v2.1.0
-- Additions of `given-when-then` scripting for BDD
-- Additions of `story-feature` scripting for BDD
-- Fixes for `aroundEach` generation
-- Updated all syntax completions
-
-### v2.0.0
-- ColdBox 4 additions/modifications
-
-### v1.9.0
-- TestBox 2.1 additions/modifications
-
-### v1.8.0
-- ColdBox 4 additions/modifications
-- TestBox 2 additions/modifications
-- CommandBox integrations
-
-### v1.7.0
-- TestBox additions
-- Testing additions
-
-### v1.5.0
-- Handler snippet fixes
-- Model skeleton fix
-- New `config` skeleton for the Configuration File
-- New `cachebox-config` skeleton for a CacheBox Configuration File
-- New `routes` skeleton for a routes.cfm template
-- Completions for ALL ColdBox related functions and major scopes
-
-### v1.0 Initial Release

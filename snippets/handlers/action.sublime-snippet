@@ -5,7 +5,7 @@
 */
 function ${1:index}( event, rc, prc ){
 	${0}
-	event.setView( "${TM_FILENAME/\.cfm//}/${1}" );
+	event.setView( "${TM_FILENAME/\.cfc//}/${1}" );
 }
 ]]></content>
 <tabTrigger>action</tabTrigger>
