@@ -2,6 +2,7 @@
 
 ### v2.3.0
 - Updated snippets for better usage in cfml plugin as well.
+- Updated sublime completions for cfml plugins.
 
 ### v2.2.0
 - Added better bdd test templates, some where missing `super` calls
