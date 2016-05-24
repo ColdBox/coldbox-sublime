@@ -1,4 +1,5 @@
 {
 	"install": "readme.md",
-	"2.2.0": "changelog.md"
+	"2.2.0": "changelog.md",
+	"2.3.0": "changelog.md"
 }
