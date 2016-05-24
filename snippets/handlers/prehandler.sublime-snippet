@@ -8,6 +8,6 @@ any function preHandler( event, rc, prc, action, eventArguments ){
 }
 ]]></content>
 <tabTrigger>pre</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>PreHandler action</description>
 </snippet>

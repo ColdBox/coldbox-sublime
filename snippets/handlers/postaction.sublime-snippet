@@ -8,6 +8,6 @@ any function post${1}( event, rc, prc, eventArguments ){
 }
 ]]></content>
 <tabTrigger>postaction</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>Post{Action} action</description>
 </snippet>

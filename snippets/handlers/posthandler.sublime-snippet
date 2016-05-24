@@ -8,6 +8,6 @@ any function postHandler( event, rc, prc, action, eventArguments ){
 }
 ]]></content>
 <tabTrigger>post</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>PostHandler action</description>
 </snippet>

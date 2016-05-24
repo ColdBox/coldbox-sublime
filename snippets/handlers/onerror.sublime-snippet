@@ -8,6 +8,6 @@ function onError( event, rc, prc, faultAction, exception, eventArguments ){
 }
 ]]></content>
 <tabTrigger>onerror</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>OnError Action</description>
 </snippet>

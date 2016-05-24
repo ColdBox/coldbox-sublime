@@ -8,6 +8,6 @@ function onInvalidHTTPMethod( event, rc, prc, faultAction, eventArguments ){
 }
 ]]></content>
 <tabTrigger>onhttp</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>OnInvalidHTTPMethod Action</description>
 </snippet>

@@ -8,6 +8,6 @@ function onMissingAction( event, rc, prc, missingAction, eventArguments ){
 }
 ]]></content>
 <tabTrigger>onma</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>OnMissingAction</description>
 </snippet>

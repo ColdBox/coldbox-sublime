@@ -1,5 +1,8 @@
 ## Changelog
 
+### v2.3.0
+- Updated snippets for better usage in cfml plugin as well.
+
 ### v2.2.0
 - Added better bdd test templates, some where missing `super` calls
 - Update all ColdBox templates to match for ColdBox 4.X

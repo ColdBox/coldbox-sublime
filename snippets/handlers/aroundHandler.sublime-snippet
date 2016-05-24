@@ -16,6 +16,6 @@ function aroundHandler( event, rc, prc, targetAction, eventArguments ){
 }
 ]]></content>
 <tabTrigger>around</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>AroundHandler action</description>
 </snippet>

@@ -8,6 +8,6 @@ void fuction set${1}(required ${1}) inject="id:${1}"{
 }
 ]]></content>
 <tabTrigger>setter</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>Setter Injection</description>
 </snippet>

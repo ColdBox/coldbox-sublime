@@ -6,6 +6,6 @@
 any function get${1} provider="${1}"{}
 ]]></content>
 <tabTrigger>provider</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>Provider Method</description>
 </snippet>

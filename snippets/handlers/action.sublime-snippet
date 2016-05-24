@@ -9,6 +9,6 @@ function ${1:index}( event, rc, prc ){
 }
 ]]></content>
 <tabTrigger>action</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>Handler Action</description>
 </snippet>

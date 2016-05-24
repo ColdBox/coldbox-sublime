@@ -8,6 +8,6 @@ any function pre${1}( event, rc, prc, eventArguments ){
 }
 ]]></content>
 <tabTrigger>preaction</tabTrigger>
-<scope>source.cfscript</scope>
+<scope>source,text</scope>
 <description>Pre{Action} action</description>
 </snippet>
