@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+// O2M -> ${1:Name}
+property 	name="${1:Name}" 
+			singularName="${1:Name}" 
+			fieldtype="one-to-many" 
+			type="array" 
+			lazy="extra" 
+			batchsize="25" 
+			orderby="${2:orderBy}"
+		  	cfc="${3:cfc}" 
+		  	fkcolumn="${4:fk}" 
+		  	inverse="true" 
+		  	cascade="all-delete-orphan";
+]]></content>
+	<tabTrigger>o2m</tabTrigger>
+	<scope>source,text</scope>
+	<description>Creates a one-to-many property</description>
+</snippet>

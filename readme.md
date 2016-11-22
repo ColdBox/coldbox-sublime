@@ -55,6 +55,9 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `entity ➝` : Creates an ORM Entity
 - `ormservice ➝` : Creates a Base ORM service
 - `virtualservice ➝` : Creates a virtual entity service
+- `o2m` : Creates a one-to-many property definition
+- `m2o` : Creates a many-to-one property definition
+- `m2m` : Creates a many-to-many property definition
 
 ### TestBox Snippets
 
@@ -73,6 +76,7 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `describe ➝` : A `describe` suite
 - `describeFull ➝` : A `describe` suite with all arguments
 - `expect ➝` : Starts an expectation DSL with a `toBe()` addition
+- `expectAll ➝` : Starts a collection expectation DSL with a `toBe()` addition
 - `expectFalse ➝` : Does a false expectation expression
 - `expectTrue ➝` : Does a true expectation expression
 - `expectToThrow ➝` : Starts an expectation that throws an exception

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+// O2M -> ${1:Name}
+property 	name="${1:Name}" 
+			fieldtype="many-to-many" 
+			type="array" 
+			lazy="extra" 
+			orderby="${2:orderby}" 
+			cascade="all"
+		  	cfc="${3:cfc}" 
+		  	fkcolumn="${4:fk}" 
+		  	linktable="${5:link_table}" 
+		  	inversejoincolumn="${6:inverse_join}";
+]]></content>
+	<tabTrigger>m2m</tabTrigger>
+	<scope>source,text</scope>
+	<description>Creates a many-to-many property</description>
+</snippet>

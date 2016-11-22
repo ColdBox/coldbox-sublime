@@ -1,5 +1,9 @@
 ## Changelog
 
+### v2.4.0
+- TestBox v2.4 Updates
+- New ORM property snippets m2m,o2m,m2o
+
 ### v2.3.0
 - Updated snippets for better usage in cfml plugin as well.
 - Updated sublime completions for cfml plugins.

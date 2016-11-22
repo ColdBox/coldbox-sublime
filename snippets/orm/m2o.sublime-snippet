@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+// M2O -> ${1:Name}
+property 	name="${1:Name}" 
+			cfc="${1:CFC}" 
+			fieldtype="many-to-one" 
+			fkcolumn="${2:fk}" 
+			lazy="true";
+]]></content>
+	<tabTrigger>m2o</tabTrigger>
+	<scope>source,text</scope>
+	<description>Creates a many-to-one property</description>
+</snippet>
