@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+/**
+* ${1:index}
+*/
+function ${1:}(){
+
+}
+]]></content>
+<tabTrigger>function</tabTrigger>
+<scope>source,text</scope>
+<description>Script Function</description>
+</snippet>

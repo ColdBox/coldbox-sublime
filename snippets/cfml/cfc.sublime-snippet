@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+/**
+* ${1:index}
+*/
+component{
+
+	/**
+	* Constructor
+	*/
+	function init(){
+
+		return this;
+	}
+
+}
+]]></content>
+<tabTrigger>cfc</tabTrigger>
+<scope>source,text</scope>
+<description>Script Component</description>
+</snippet>

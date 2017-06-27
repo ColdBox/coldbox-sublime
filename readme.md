@@ -36,6 +36,10 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `routes ➝` : Creates a new routing file
 - `point ➝` : Creates a new interception point method
 - `unit ➝` : Creates a TestBox TDD xUnit Bundle
+- `cfc ➝` : Creates a new ColdFusion script CFC
+- `function ➝` : Creates a new ColdFusion script function
+- `inject ➝` : Creates a new property with an `inject` annotation for WireBox
+- `property ➝` : Creates a new ColdFusion script property
 
 ### Handler Code Snippets
 

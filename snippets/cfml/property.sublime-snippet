@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+/**
+* ${1}
+*/
+property name="${1}";
+]]></content>
+<tabTrigger>prop</tabTrigger>
+<scope>source,text</scope>
+<description>Script Property</description>
+</snippet>

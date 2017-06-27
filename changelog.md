@@ -1,5 +1,12 @@
 ## Changelog
 
+### v2.5.0
+- Fixes for base spec bdd generation
+- New `cfc` snippet for new CFC
+- New `function` snippet for new function
+- New `inject` snippet for a new WireBox property injection
+- New `property` snippet for a new property in script
+
 ### v2.4.0
 - TestBox v2.4 Updates
 - New ORM property snippets m2m,o2m,m2o
