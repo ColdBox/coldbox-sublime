@@ -9,12 +9,12 @@ component extends="testbox.system.BaseSpec"{
 
 	// executes before all suites+specs in the run() method
 	function beforeAll(){
-		super.beforeAll();
+		
 	}
 
 	// executes after all suites+specs in the run() method
 	function afterAll(){
-		super.afterAll();
+		
 	}
 
 /*********************************** BDD SUITES ***********************************/
