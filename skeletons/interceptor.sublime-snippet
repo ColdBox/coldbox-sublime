@@ -1,11 +1,13 @@
 <snippet>
 <content><![CDATA[
 /**
-* ${1:My Interceptor Hint}
-*/
+ * ${1:My Interceptor Hint}
+ */
 component extends="coldbox.system.Interceptor"{
 	
-	// Configure Interceptor
+	/**
+	 * Configure the interceptor
+	 */
 	void function configure(){
 		${0}
 	}

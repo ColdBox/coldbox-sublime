@@ -1,9 +1,9 @@
 <snippet>
 <content><![CDATA[
 /**
-* ${1} interception point
-*/
-function ${1}( required event, required interceptData, required buffer ){
+ * ${1} interception point
+ */
+function ${1}( event, interceptData, buffer, rc, prc ){
 	${0}
 }
 ]]></content>

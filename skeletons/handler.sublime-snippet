@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
 /**
-* ${1:My Event Handler Hint}
-*/
+ * ${1:My Event Handler Hint}
+ */
 component extends="coldbox.system.EventHandler"{
 	
 	// OPTIONAL HANDLER PROPERTIES
@@ -35,8 +35,8 @@ component extends="coldbox.system.EventHandler"{
 	*/
 
 	/**
-	* Index
-	*/
+	 * Index
+	 */
 	any function index( event, rc, prc ){
 		${0}
 	}

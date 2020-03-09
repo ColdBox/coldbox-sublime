@@ -1,25 +1,26 @@
 <snippet>
 <content><![CDATA[
 /**
-* ColdBox Configuration File
-*/
+ * ColdBox Configuration File
+ */
 component{
 	
-	// Configure ColdBox Application
+	/**
+	 * Configure the ColdBox Application
+	 */
 	function configure(){
 
 		// coldbox directives
 		coldbox = {
-			//Application Setup
-			appName 				= "${1:Your App Name}",
-			eventName 				= "event",
-
-			//Development Settings
+			// Application Setup
+			appName 				= getSystemSetting( "APPNAME", "${1:Your App Name}" ),
+			
+			// Development Settings
 			reinitPassword			= "",
 			handlersIndexAutoReload = true,
 
-			//Implicit Events
-			defaultEvent			= "Main.index",
+			// Implicit Events
+			defaultEvent			= "",
 			requestStartHandler		= "Main.onRequestStart",
 			requestEndHandler		= "",
 			applicationStartHandler = "Main.onAppInit",
@@ -28,27 +29,28 @@ component{
 			sessionEndHandler		= "",
 			missingTemplateHandler	= "",
 
-			//Extension Points
-			applicationHelper			= "includes/helpers/ApplicationHelper.cfm",
-			ViewsHelper					= "",
-			coldboxExtensionsLocation 	= "",
+			// Extension Points
+			applicationHelper 			= "includes/helpers/ApplicationHelper.cfm",
+			viewsHelper					= "",
 			modulesExternalLocation		= [],
-			pluginsExternalLocation 	= "",
 			viewsExternalLocation		= "",
 			layoutsExternalLocation 	= "",
 			handlersExternalLocation  	= "",
 			requestContextDecorator 	= "",
-			controllerDecorator 		= "",
+			controllerDecorator			= "",
 
-			//Error/Exception Handling
-			exceptionHandler		= "",
-			onInvalidEvent			= "",
-			customErrorTemplate		= "",
+			// Error/Exception Handling
+			invalidHTTPMethodHandler 	= "",
+			exceptionHandler			= "main.onException",
+			invalidEventHandler			= "",
+			customErrorTemplate			= "",
 
-			//Application Aspects
+			// Application Aspects
 			handlerCaching 			= false,
 			eventCaching			= false,
-			viewCaching 			= false
+			viewCaching				= false,
+			// Will automatically do a mapDirectory() on your `models` for you.
+			autoMapModels			= true
 		};
 
 		// custom settings
@@ -65,8 +67,6 @@ component{
 
 		// Module Directives
 		modules = {
-			//Turn to false in production
-			autoReload = false,
 			// An array of modules names to load, empty means all of them
 			include = [],
 			// An array of modules names to NOT load, empty means none
@@ -85,68 +85,54 @@ component{
 			info = [ "coldbox.system" ]
 		};
 
-		//Layout Settings
+		/ Layout Settings
 		layoutSettings = {
-			defaultLayout = "Main.cfm",
+			defaultLayout = "",
 			defaultView   = ""
 		};
 
-		//Interceptor Settings
+		// Interceptor Settings
 		interceptorSettings = {
-			throwOnInvalidStates = false,
 			customInterceptionPoints = ""
 		};
 
-		//Register interceptors as an array, we need order
+		// Register interceptors as an array, we need order
 		interceptors = [
-			//SES
-			{
-				class="coldbox.system.interceptors.SES"
-			}
 		];
+
+		// Module Settings
+		moduleSettings = {
+
+		};
 
 		/*
-		// flash scope configuration
-		flash = {
-			scope = "session,client,cluster,ColdboxCache,or full path",
-			properties = {}, // constructor properties for the flash scope implementation
-			inflateToRC = true, // automatically inflate flash data into the RC scope
-			inflateToPRC = false, // automatically inflate flash data into the PRC scope
-			autoPurge = true, // automatically purge flash data for you
-			autoSave = true // automatically save flash scopes at end of a request and on relocations.
-		};
+			// flash scope configuration
+			flash = {
+				scope = "session,client,cluster,ColdboxCache,or full path",
+				properties = {}, // constructor properties for the flash scope implementation
+				inflateToRC = true, // automatically inflate flash data into the RC scope
+				inflateToPRC = false, // automatically inflate flash data into the PRC scope
+				autoPurge = true, // automatically purge flash data for you
+				autoSave = true // automatically save flash scopes at end of a request and on relocations.
+			};
 
-		//Register Layouts
-		layouts = [
-			{ name = "login",
-		 	  file = "Layout.tester.cfm",
-			  views = "vwLogin,test",
-			  folders = "tags,pdf/single"
-			}
-		];
+			//Conventions
+			conventions = {
+				handlersLocation = "handlers",
+				pluginsLocation  = "plugins",
+				viewsLocation 	 = "views",
+				layoutsLocation  = "layouts",
+				modelsLocation 	 = "model",
+				eventAction 	 = "index"
+			};
 
-		//Conventions
-		conventions = {
-			handlersLocation = "handlers",
-			pluginsLocation  = "plugins",
-			viewsLocation 	 = "views",
-			layoutsLocation  = "layouts",
-			modelsLocation 	 = "model",
-			eventAction 	 = "index"
-		};
-
-		//Datasources
-		datasources = {
-			mysite   = {name="mySite", dbType="mysql", username="root", password="pass"},
-			blog_dsn = {name="myBlog", dbType="oracle", username="root", password="pass"}
-		};
 		*/
 
 	}
 
 	/**
-	* Dev environment
-	*/
+	 * Dev environment
+	 */
 	function development(){
 		coldbox.customErrorTemplate = "/coldbox/system/includes/BugReport.cfm";
 	}
