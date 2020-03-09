@@ -1,7 +1,9 @@
 <snippet>
 <content><![CDATA[
 it( "${1:}", function(){
-	var event = execute( event="${2:main.index}", renderResults=${3:true|false} );
+	var event 	= this.request( ${2:main.index}, {} );
+	var rc 		= event.getCollection();
+	var prc 	= event.getPrivateCollection();
 
 });
 ]]></content>

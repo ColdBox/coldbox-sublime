@@ -1,13 +1,13 @@
 <snippet>
 <content><![CDATA[
 /**
-* A ColdBox Generic ORM entity service
-*/
+ * A ColdBox Generic ORM entity service
+ */
 component extends="cborm.models.BaseORMService" singleton{
 	
 	/**
-	* Constructor
-	*/
+	 * Constructor
+	 */
 	function init(){
 		
 		// init super class

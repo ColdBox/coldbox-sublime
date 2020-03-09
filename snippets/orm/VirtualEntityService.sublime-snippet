@@ -1,17 +1,17 @@
 <snippet>
 <content><![CDATA[
 /**
-* A ColdBox Enabled virtual entity service
-*/
+ * A ColdBox Enabled virtual entity service
+ */
 component extends="cborm.models.VirtualEntityService" singleton{
 	
 	/**
-	* Constructor
-	*/
+	 * Constructor
+	 */
 	function init(){
 		
 		// init super class
-		super.init(entityName="${1:Entityname}");
+		super.init( entityName="${1:Entityname}" );
 		
 		// Use Query Caching
 	    setUseQueryCaching( ${2:false} );

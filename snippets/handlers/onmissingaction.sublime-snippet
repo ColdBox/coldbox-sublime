@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
 /**
-* Executes when you execute an action that is missing
-*/
+ * Executes when you execute an action that is missing
+ */
 function onMissingAction( event, rc, prc, missingAction, eventArguments ){
 	${0}
 }

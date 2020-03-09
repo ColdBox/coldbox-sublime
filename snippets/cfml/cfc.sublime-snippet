@@ -1,13 +1,13 @@
 <snippet>
 <content><![CDATA[
 /**
-* ${1:index}
-*/
-component{
+ * ${1:index}
+ */
+component accessors="true"{
 
 	/**
-	* Constructor
-	*/
+	 * Constructor
+	 */
 	function init(){
 
 		return this;

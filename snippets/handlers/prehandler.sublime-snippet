@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
 /**
-* Executes before all handler actions
-*/
+ * Executes before all handler actions
+ */
 any function preHandler( event, rc, prc, action, eventArguments ){
 	${0}
 }

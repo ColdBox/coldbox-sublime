@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
 /**
-* Executes before your '${1} action only
-*/
+ * Executes before your '${1} action only
+ */
 any function pre${1}( event, rc, prc, eventArguments ){
 	${0}
 }

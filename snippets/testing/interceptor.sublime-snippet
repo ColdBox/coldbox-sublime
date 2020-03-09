@@ -3,8 +3,8 @@
 component extends="coldbox.system.testing.BaseInterceptorTest" interceptor="${1:InterceptorPath}"{
 	
 	/**
-	* You can remove this setup method if you do not have anything to setup
-	*/
+	 * You can remove this setup method if you do not have anything to setup
+	 */
 	void function setup(){
 		// interceptor configuration properties, if any
 		configProperties = {};

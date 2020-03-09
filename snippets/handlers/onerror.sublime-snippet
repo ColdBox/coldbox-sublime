@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
 /**
-* Executes when an exception occurs in this handler
-*/
+ * Executes when an exception occurs in this handler
+ */
 function onError( event, rc, prc, faultAction, exception, eventArguments ){
 	${0}
 }

@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
 /**
-* ${1}
-*/
+ * ${1}
+ */
 property name="${1}";
 ]]></content>
 <tabTrigger>prop</tabTrigger>

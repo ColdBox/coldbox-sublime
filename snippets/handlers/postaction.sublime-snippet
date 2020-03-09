@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
 /**
-* Executes after your '${1} action only
-*/
+ * Executes after your '${1} action only
+ */
 any function post${1}( event, rc, prc, eventArguments ){
 	${0}
 }

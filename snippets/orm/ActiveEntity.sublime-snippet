@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
 /**
-* A cool ${1:EntityName} entity
-*/
+ * A cool ${1:EntityName} entity
+ */
 component persistent="true" table="${2:TableName}" extends="cborm.models.ActiveEntity"{
 
 	// Primary Key
@@ -15,8 +15,17 @@ component persistent="true" table="${2:TableName}" extends="cborm.models.ActiveE
 	this.constraints = {
 		// Example: age = { required=true, min="18", type="numeric" }
 	};
+
+	// Mementifier
+	this.memento = {
+		defaultIncludes = [ ],
+		defaultExcludes = [ ],
+		neverInlucde 	= [ ]
+	};
 	
-	// Constructor
+	/**
+	 * Constructor
+	 */
 	function init(){
 		super.init();
 

@@ -3,8 +3,8 @@
 component extends="coldbox.system.testing.BaseHandlerTest" handler="${1:HandlerPath}"{
 	
 	/**
-	* You can remove this setup method if you do not have anything to setup
-	*/
+	 * You can remove this setup method if you do not have anything to setup
+	 */
 	void function setup(){
 		super.setup();
 		

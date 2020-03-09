@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
 /**
-* Executes when an invalid HTTP method is called
-*/
+ * Executes when an invalid HTTP method is called
+ */
 function onInvalidHTTPMethod( event, rc, prc, faultAction, eventArguments ){
 	${0}
 }
