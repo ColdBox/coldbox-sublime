@@ -1,16 +1,18 @@
-# A ColdBox Platform Bundle v2.0.0 for Sublime Text 2/3
+# A ColdBox Platform Bundle for Sublime Text 3+
 
-Get the latest Sublime Text 2/3 from http://www.sublimetext.com/2.
+Get the latest Sublime Text from http://www.sublimetext.com
 
 ## Target Platforms
-- ColdBox 4.X.X
+
+- ColdBox 5.X.X
 - TestBox 2.X.X
 
-## Currently supported features
+## Features
 
 This bundle includes functionality not only for ColdBox MVC, but also for TestBox BDD/TDD, MockBox, WireBox, CacheBox and LogBox.
 
 ### Code Insight
+
 Code completion for all major ColdBox + TestBox functions and scopes:
 
 - `binder ➝` : "coldbox.system.ioc.config.Binder",

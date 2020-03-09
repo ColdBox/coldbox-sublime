@@ -1,6 +1,11 @@
 ## Changelog
 
+### v2.6.0
+
+- Updates for Box Libraries @ v5.x
+
 ### v2.5.0
+
 - Fixes for base spec bdd generation
 - New `cfc` snippet for new CFC
 - New `function` snippet for new function
@@ -8,14 +13,17 @@
 - New `property` snippet for a new property in script
 
 ### v2.4.0
+
 - TestBox v2.4 Updates
 - New ORM property snippets m2m,o2m,m2o
 
 ### v2.3.0
+
 - Updated snippets for better usage in cfml plugin as well.
 - Updated sublime completions for cfml plugins.
 
 ### v2.2.0
+
 - Added better bdd test templates, some where missing `super` calls
 - Update all ColdBox templates to match for ColdBox 4.X
 - Fix on handler extension paths
@@ -25,27 +33,33 @@
 - Added `$assert` completions
 
 ### v2.1.0
+
 - Additions of `given-when-then` scripting for BDD
 - Additions of `story-feature` scripting for BDD
 - Fixes for `aroundEach` generation
 - Updated all syntax completions
 
 ### v2.0.0
+
 - ColdBox 4 additions/modifications
 
 ### v1.9.0
+
 - TestBox 2.1 additions/modifications
 
 ### v1.8.0
+
 - ColdBox 4 additions/modifications
 - TestBox 2 additions/modifications
 - CommandBox integrations
 
 ### v1.7.0
+
 - TestBox additions
 - Testing additions
 
 ### v1.5.0
+
 - Handler snippet fixes
 - Model skeleton fix
 - New `config` skeleton for the Configuration File
