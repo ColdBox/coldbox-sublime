@@ -1,5 +1,10 @@
 ## Changelog
 
+### v2.7.0
+
+- Updates for ColdBox 6
+- Updates for TestBox 4
+
 ### v2.6.0
 
 - Updates for Box Libraries @ v5.x

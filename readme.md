@@ -4,8 +4,10 @@ Get the latest Sublime Text from http://www.sublimetext.com
 
 ## Target Platforms
 
+- ColdBox 6.X.X
 - ColdBox 5.X.X
-- TestBox 2.X.X
+- TestBox 3.X.X
+- TestBox 4.X.X
 
 ## Features
 
@@ -30,18 +32,19 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 
 - `cachebox-config ➝` : Creates a new CacheBox.cfc configuration file
 - `config ➝` : Creates a new ColdBox.cfc configuration file
+- `cfc ➝` : Creates a new ColdFusion script CFC
 - `bdd ➝` : Creates a TestBox BDD Bundle
 - `box ➝` : Creates a `box.json` template
+- `function ➝` : Creates a new ColdFusion script function
 - `handler ➝` : Creates a ColdBox Event Handler
+- `inject ➝` : Creates a new property with an `inject` annotation for WireBox
 - `interceptor ➝` : Creates a ColdBox Interceptor
 - `model ➝` : Creates a model object
-- `routes ➝` : Creates a new routing file
 - `point ➝` : Creates a new interception point method
-- `unit ➝` : Creates a TestBox TDD xUnit Bundle
-- `cfc ➝` : Creates a new ColdFusion script CFC
-- `function ➝` : Creates a new ColdFusion script function
-- `inject ➝` : Creates a new property with an `inject` annotation for WireBox
 - `property ➝` : Creates a new ColdFusion script property
+- `routes ➝` : Creates a new routing file
+- `resthandler ➝` : Creates a ColdBox Rest Handler
+- `unit ➝` : Creates a TestBox TDD xUnit Bundle
 
 ### Handler Code Snippets
 

@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+/**
+ * ${1:My Rest Handler Hint}
+ */
+component extends="coldbox.system.RestHandler"{
+	
+	// REST Allowed HTTP Methods Ex: this.allowedMethods = {delete='POST,DELETE',index='GET'}
+	this.allowedMethods = {};
+	
+	/**
+	 * Index
+	 */
+	any function index( event, rc, prc ){
+		event.getResponse()
+            .setData( "" );
+	}
+	
+}
+]]></content>
+	<tabTrigger>resthandler</tabTrigger>
+	<scope>source,text</scope>
+	<description>ColdBox Rest Handler</description>
+</snippet>
