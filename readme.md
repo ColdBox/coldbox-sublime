@@ -4,9 +4,7 @@ Get the latest Sublime Text from http://www.sublimetext.com
 
 ## Target Platforms
 
-- ColdBox 6.X.X
-- ColdBox 5.X.X
-- TestBox 3.X.X
+- ColdBox 5.X.X+
 - TestBox 4.X.X
 
 ## Features
@@ -50,13 +48,13 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 
 - `action ➝` : Creates a handler action
 - `around` : Creates an *aroundHandler()* implicit action
-- `onerror ➝` : Creates an *onError()* implicit action 
+- `onerror ➝` : Creates an *onError()* implicit action
 - `onhttp ➝` : Creates an *onInvalidHTTPMethod()* implict action
-- `onma ➝` : Creates an *onMissingAction()* implicit action 
-- `postaction ➝` : Creates a *postXXX()* implicit action 
-- `post ➝` : Creates a *postHandler()* implicit action 
-- `preaction ➝` : Creates a *preXXX()* implicit action 
-- `pre ➝` : Creates a *preHandler()* implicit action 
+- `onma ➝` : Creates an *onMissingAction()* implicit action
+- `postaction ➝` : Creates a *postXXX()* implicit action
+- `post ➝` : Creates a *postHandler()* implicit action
+- `preaction ➝` : Creates a *preXXX()* implicit action
+- `pre ➝` : Creates a *preHandler()* implicit action
 
 ### ORM Code Snippets
 
@@ -98,7 +96,7 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `teardown ➝` : An `teardown()` xUnit life-cycle method
 - `then, thenFull ➝` : Starts a `then()` block
 - `unit ➝` : Creates a new xUnit Test Bundle CFC
-- `when, whenFull ➝` : Starts a `when()` block 
+- `when, whenFull ➝` : Starts a `when()` block
 
 ### ColdBox Testing Snippets
 
@@ -116,33 +114,37 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `provider ➝` : Creates a WireBox provider method
 - `setter ➝` : Creates a WireBox setter injection
 
-## Installation instructions : 
+## Installation Instructions
 
-### With Package Control ###
+### With Package Control
 
 If you have the [Package Control](http://wbond.net/sublime_packages/package_control) package installed, you can install *ColdBox Platform Bundle* from inside Sublime Text itself. Open the Command Palette and select "Package Control: Install Package", then search for *ColdBox*.
 
-### Without Package Control ###
+### Without Package Control
 
-#### Mac 
+#### Mac
 
-    $ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
-    $ git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
-    
+```bash
+$ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+$ git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
+```
+
 #### Linux (Ubuntu like distros)
 
-    $ cd ~/.config/sublime-text-2/Packages/
-    $ git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
+```bash
+$ cd ~/.config/sublime-text-2/Packages/
+$ git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
+```
 
-#### Windows 7:
+#### Windows 7
 
-    Copy the directory to: "C:\Users\<username>\AppData\Roaming\Sublime Text 2\Packages"
+`Copy the directory to: "C:\Users\<username>\AppData\Roaming\Sublime Text 2\Packages"`
 
-#### Windows XP:
+#### Windows XP
 
-    Copy the directory to: "C:\Documents and Settings\<username>\Application Data\Sublime Text 2\Packages"
+`Copy the directory to: "C:\Documents and Settings\<username>\Application Data\Sublime Text 2\Packages"`
 
-## References:
+## References
 
 - Sublimetext 2 API - http://www.sublimetext.com/docs/2/api_reference.html
 - How to create a plugin: http://net.tutsplus.com/tutorials/python-tutorials/how-to-create-a-sublime-text-2-plugin/
