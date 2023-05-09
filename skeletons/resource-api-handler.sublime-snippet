@@ -1,0 +1,62 @@
+<snippet>
+<content><![CDATA[
+/**
+ * ${1:My API Resource Handler Hint}
+ * Implicit Functions: preHandler, postHandler, aroundHandler, onMissingAction, onError, onInvalidHTTPMethod
+ */
+component extends="coldbox.system.RestHandler"{
+
+	this.prehandler_only 	= "";
+	this.prehandler_except 	= "";
+	this.posthandler_only 	= "";
+	this.posthandler_except = "";
+	this.aroundHandler_only = "";
+	this.aroundHandler_except = "";
+
+	/**
+	 * index
+	 */
+	function index( event, rc, prc ){
+        event.getResponse()
+            .setData( {} )
+            .addMessage( "Calling photos/index" );
+	}
+	/**
+	 * create
+	 */
+	function create( event, rc, prc ){
+        event.getResponse()
+            .setData( {} )
+            .addMessage( "Calling photos/create" );
+	}
+	/**
+	 * show
+	 */
+	function show( event, rc, prc ){
+        event.getResponse()
+            .setData( {} )
+            .addMessage( "Calling photos/show" );
+	}
+	/**
+	 * update
+	 */
+	function update( event, rc, prc ){
+        event.getResponse()
+            .setData( {} )
+            .addMessage( "Calling photos/update" );
+	}
+	/**
+	 * delete
+	 */
+	function delete( event, rc, prc ){
+        event.getResponse()
+            .setData( {} )
+            .addMessage( "Calling photos/delete" );
+	}
+
+}
+]]></content>
+	<tabTrigger>apiResourceHandler</tabTrigger>
+	<scope>source,text</scope>
+	<description>ColdBox API Resource Handler</description>
+</snippet>

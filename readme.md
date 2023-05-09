@@ -28,6 +28,7 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 
 ### Code Skeleton Snippets
 
+- `apiResourceHandler` : Creates a ColdBox API Resource Handler
 - `cachebox-config ➝` : Creates a new CacheBox.cfc configuration file
 - `config ➝` : Creates a new ColdBox.cfc configuration file
 - `cfc ➝` : Creates a new ColdFusion script CFC
@@ -42,6 +43,7 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `property ➝` : Creates a new ColdFusion script property
 - `routes ➝` : Creates a new routing file
 - `resthandler ➝` : Creates a ColdBox Rest Handler
+- `resourcehandler` : Creates a ColdBox Resource Handler
 - `unit ➝` : Creates a TestBox TDD xUnit Bundle
 
 ### Handler Code Snippets
@@ -100,7 +102,6 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 
 ### ColdBox Testing Snippets
 
-- `handlerTest ➝` : Creates a ColdBox Event Handler test case
 - `integration ➝` : Creates a top down integration BDD test case
 - `interceptorTest ➝` : Creates an Interceptor test case
 - `modelTest ➝` : Creates a model test case

@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.1.0
+
+- Updated all skeletons to more ColdBox 7 goodness
+
 ## v3.0.0
 
 - Updates for ColdBox 7

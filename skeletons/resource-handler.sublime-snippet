@@ -1,0 +1,71 @@
+<snippet>
+<content><![CDATA[
+/**
+ * ${1:My Resource Handler Hint}
+ * Implicit Functions: preHandler, postHandler, aroundHandler, onMissingAction, onError, onInvalidHTTPMethod
+ */
+component extends="coldbox.system.EventHandler"{
+
+	this.prehandler_only 	= "";
+	this.prehandler_except 	= "";
+	this.posthandler_only 	= "";
+	this.posthandler_except = "";
+	this.aroundHandler_only = "";
+	this.aroundHandler_except = "";
+	this.allowedMethods = {};
+
+	/**
+	 * Display a listing of the resource
+	 */
+	function index( event, rc, prc ){
+
+	}
+
+	/**
+	 * Show the form for creating a new resource
+	 */
+	function new( event, rc, prc ){
+
+	}
+
+	/**
+	 * Store a newly created resource in storage
+	 */
+	function create( event, rc, prc ){
+
+	}
+
+	/**
+	 * Display the specified resource
+	 */
+	function show( event, rc, prc ){
+
+	}
+
+	/**
+	 * Show the form for editing the specified resource
+	 */
+	function edit( event, rc, prc ){
+
+	}
+
+	/**
+	 * Update the specified resource in storage
+	 */
+	function update( event, rc, prc ){
+
+	}
+
+	/**
+	 * Remove the specified resource from storage
+	 */
+	function delete( event, rc, prc ){
+
+	}
+
+}
+]]></content>
+	<tabTrigger>resourcehandler</tabTrigger>
+	<scope>source,text</scope>
+	<description>ColdBox Resource Handler</description>
+</snippet>
