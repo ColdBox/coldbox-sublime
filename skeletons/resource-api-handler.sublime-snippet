@@ -19,7 +19,7 @@ component extends="coldbox.system.RestHandler"{
 	function index( event, rc, prc ){
         event.getResponse()
             .setData( {} )
-            .addMessage( "Calling photos/index" );
+            .addMessage( "Calling photos/index" )
 	}
 	/**
 	 * create
@@ -27,7 +27,7 @@ component extends="coldbox.system.RestHandler"{
 	function create( event, rc, prc ){
         event.getResponse()
             .setData( {} )
-            .addMessage( "Calling photos/create" );
+            .addMessage( "Calling photos/create" )
 	}
 	/**
 	 * show
@@ -35,7 +35,7 @@ component extends="coldbox.system.RestHandler"{
 	function show( event, rc, prc ){
         event.getResponse()
             .setData( {} )
-            .addMessage( "Calling photos/show" );
+            .addMessage( "Calling photos/show" )
 	}
 	/**
 	 * update
@@ -43,7 +43,7 @@ component extends="coldbox.system.RestHandler"{
 	function update( event, rc, prc ){
         event.getResponse()
             .setData( {} )
-            .addMessage( "Calling photos/update" );
+            .addMessage( "Calling photos/update" )
 	}
 	/**
 	 * delete
@@ -51,7 +51,7 @@ component extends="coldbox.system.RestHandler"{
 	function delete( event, rc, prc ){
         event.getResponse()
             .setData( {} )
-            .addMessage( "Calling photos/delete" );
+            .addMessage( "Calling photos/delete" )
 	}
 
 }

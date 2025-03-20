@@ -4,12 +4,12 @@ Get the latest Sublime Text from http://www.sublimetext.com
 
 ## Target Platforms
 
-- ColdBox 5.X.X+
-- TestBox 4.X.X
+- ColdBox 7.X.X+
+- TestBox 6.X.X
 
 ## Features
 
-This bundle includes functionality not only for ColdBox MVC, but also for TestBox BDD/TDD, MockBox, WireBox, CacheBox and LogBox.
+This bundle includes functionality not only for ColdBox MVC, but also for TestBox BDD/TDD, WireBox, CacheBox and LogBox.
 
 ### Code Insight
 
@@ -31,6 +31,7 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `apiResourceHandler` : Creates a ColdBox API Resource Handler
 - `cachebox-config ➝` : Creates a new CacheBox.cfc configuration file
 - `config ➝` : Creates a new ColdBox.cfc configuration file
+- `class ➝` : Creates a new BoxLang class
 - `cfc ➝` : Creates a new ColdFusion script CFC
 - `bdd ➝` : Creates a TestBox BDD Bundle
 - `box ➝` : Creates a `box.json` template
@@ -126,29 +127,23 @@ If you have the [Package Control](http://wbond.net/sublime_packages/package_cont
 #### Mac
 
 ```bash
-$ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
-$ git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
 ```
 
 #### Linux (Ubuntu like distros)
 
 ```bash
-$ cd ~/.config/sublime-text-2/Packages/
-$ git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
+cd ~/.config/sublime-text-3/Packages/
+git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
 ```
 
 #### Windows 7
 
-`Copy the directory to: "C:\Users\<username>\AppData\Roaming\Sublime Text 2\Packages"`
-
-#### Windows XP
-
-`Copy the directory to: "C:\Documents and Settings\<username>\Application Data\Sublime Text 2\Packages"`
+`Copy the directory to: "C:\Users\<username>\AppData\Roaming\Sublime Text 3\Packages"`
 
 ## References
 
-- Sublimetext 2 API - http://www.sublimetext.com/docs/2/api_reference.html
-- How to create a plugin: http://net.tutsplus.com/tutorials/python-tutorials/how-to-create-a-sublime-text-2-plugin/
-- Unoffical (but very good) docs - http://sublimetext.info/docs/en/
+- Sublimetext API - https://www.sublimetext.com/docs/api_reference.html
+- Unoffical (but very good) docs - https://docs.sublimetext.info/index.html
 - ColdFusion Sublime Text bundle - https://github.com/SublimeText/ColdFusion
-- MXUnit Sublime Text bundle - https://github.com/mxunit/sublime-text-2-mxunit

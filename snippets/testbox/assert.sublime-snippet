@@ -1,6 +1,6 @@
 <snippet>
 <content><![CDATA[
-assert(	${1}, ${2:'Message'});
+assert(	${1}, ${2:'Message'})
 ]]></content>
 	<tabTrigger>assert</tabTrigger>
 	<scope>source,text</scope>

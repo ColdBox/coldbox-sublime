@@ -2,7 +2,7 @@
 <content><![CDATA[
 function afterAll(){
 	${0}
-});]]></content>
+})]]></content>
 	<tabTrigger>afterall</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox BDD After All</description>

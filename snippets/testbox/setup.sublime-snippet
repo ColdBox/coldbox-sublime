@@ -2,7 +2,7 @@
 <content><![CDATA[
 function setup( currentMethod ){
 	${0}
-});]]></content>
+})]]></content>
 	<tabTrigger>setup</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox Setup</description>

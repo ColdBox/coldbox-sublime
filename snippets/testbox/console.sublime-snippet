@@ -1,6 +1,6 @@
 <snippet>
 <content><![CDATA[
-console( $1 );
+console( $1 )
 ]]></content>
 	<tabTrigger>console</tabTrigger>
 	<scope>source,text</scope>

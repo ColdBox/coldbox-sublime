@@ -1,6 +1,6 @@
 <snippet>
 <content><![CDATA[
-aroundEach(function( spec, suite ){
+aroundEach( ( spec, suite ) => {
 	${0}
 	arguments.spec.body();
 });]]></content>

@@ -1,9 +1,14 @@
 <snippet>
 <content><![CDATA[
-story( title="${1:A suite}", labels="", asyncAll=false, skip=false, body=function(){
+story(
+    title="${1:A suite}",
+    labels="",
+    asyncAll=false,
+    skip=false,
+    body=() => {
 ${0}
 
-});]]></content>
+})]]></content>
 	<tabTrigger>storyFull</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox BDD Story With Arguments</description>

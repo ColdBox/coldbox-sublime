@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
-it( "${1:A Spec}", function(){
+it( "${1:A Spec}", () => {
 ${0}
-});]]></content>
+})]]></content>
 	<tabTrigger>it</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox Spec</description>

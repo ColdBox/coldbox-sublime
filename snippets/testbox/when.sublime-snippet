@@ -1,9 +1,9 @@
 <snippet>
 <content><![CDATA[
-when( "${1:A suite}", function(){
+when( "${1:A suite}", () => {
 ${0}
 
-});]]></content>
+})]]></content>
 	<tabTrigger>when</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox BDD When</description>

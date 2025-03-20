@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
-expect(	function(){
+expect(	() => {
 	${1}
-} ).toThrow();
+} ).toThrow()
 ]]></content>
 	<tabTrigger>expectToThrow</tabTrigger>
 	<scope>source,text</scope>

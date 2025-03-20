@@ -2,7 +2,7 @@
 <content><![CDATA[
 function beforeTests(){
 	${0}
-});]]></content>
+})]]></content>
 	<tabTrigger>beforetests</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox xUnit Before Tests</description>

@@ -1,6 +1,6 @@
 <snippet>
 <content><![CDATA[
-debug( var=$1, duplicate=true, top=999 );
+debug( var=$1, duplicate=true, top=999 )
 ]]></content>
 	<tabTrigger>debugduplicate</tabTrigger>
 	<scope>source,text</scope>

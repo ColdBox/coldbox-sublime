@@ -1,7 +1,9 @@
 <snippet>
 <content><![CDATA[
-component extends="coldbox.system.testing.BaseInterceptorTest" interceptor="${1:InterceptorPath}"{
-	
+component
+    extends="coldbox.system.testing.BaseInterceptorTest"
+    interceptor="${1:InterceptorPath}"{
+
 	/**
 	 * You can remove this setup method if you do not have anything to setup
 	 */
@@ -12,10 +14,10 @@ component extends="coldbox.system.testing.BaseInterceptorTest" interceptor="${1:
 		super.setup();
 		// we are now ready to test this interceptor
 	}
-	
+
 	function testConfigure(){
 		// any mocking here
-		
+
 		// test configure
 		interceptor.configure();
 	}

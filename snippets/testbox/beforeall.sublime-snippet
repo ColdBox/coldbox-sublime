@@ -2,7 +2,7 @@
 <content><![CDATA[
 function beforeAll(){
 	${0}
-});]]></content>
+})]]></content>
 	<tabTrigger>beforeall</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox BDD Before All</description>

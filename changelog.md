@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.2.0
+
+- Updates for latest software versions
+- Updated to latest ColdBox
+- Updated to latest BoxLang engines
+
 ## v3.1.0
 
 - Updated all skeletons to more ColdBox 7 goodness

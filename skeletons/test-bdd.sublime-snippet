@@ -25,13 +25,13 @@ component extends="testbox.system.BaseSpec"{
 
 	function run( testResults, testBox ){
 		// all your suites go here.
-		describe( "My First Suite", function(){
+		describe( "My First Suite", () => {
 
-			it( "A Spec", function(){
-				fail( 'implement' );
-			} );
+			it( "A Spec", () => {
+				fail( 'implement' )
+			} )
 
-		} );
+		} )
 	}
 
 }

@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+@inject( "${2}" )
+property name="${1}";
+]]></content>
+<tabTrigger>inject</tabTrigger>
+<scope>source,text</scope>
+<description>Property Injection</description>
+</snippet>

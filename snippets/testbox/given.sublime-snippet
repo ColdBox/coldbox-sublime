@@ -1,9 +1,9 @@
 <snippet>
 <content><![CDATA[
-given( "${1:A suite}", function(){
+given( "${1:A suite}", () => {
 ${0}
 
-});]]></content>
+})]]></content>
 	<tabTrigger>given</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox BDD Given</description>

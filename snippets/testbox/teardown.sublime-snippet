@@ -2,7 +2,7 @@
 <content><![CDATA[
 function teardown( currentMethod ){
 	${0}
-});]]></content>
+})]]></content>
 	<tabTrigger>teardown</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox Teardown</description>

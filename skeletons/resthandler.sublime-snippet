@@ -10,7 +10,7 @@ component extends="coldbox.system.RestHandler"{
 	 */
 	any function index( event, rc, prc ){
 		event.getResponse()
-            .setData( "" );
+            .setData( "" )
 	}
 
 }

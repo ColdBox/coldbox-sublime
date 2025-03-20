@@ -1,8 +1,12 @@
 <snippet>
 <content><![CDATA[
-then( title="${1:A Spec}", labels="", skip=false, body=function(){
+then(
+    title="${1:A Spec}",
+    labels="",
+    skip=false,
+    body=() => {
 ${0}
-});]]></content>
+})]]></content>
 	<tabTrigger>thenFull</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox Spec Then Arguments</description>

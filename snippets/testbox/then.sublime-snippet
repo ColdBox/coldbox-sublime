@@ -1,8 +1,8 @@
 <snippet>
 <content><![CDATA[
-then( "${1:A Spec}", function(){
+then( "${1:A Spec}", () => {
 ${0}
-});]]></content>
+})]]></content>
 	<tabTrigger>then</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox Spec Then</description>

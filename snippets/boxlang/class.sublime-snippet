@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+/**
+ * ${1:index}
+ */
+class{
+
+	/**
+	 * Constructor
+	 */
+	function init(){
+		return this;
+	}
+
+    /**
+     * Main executable
+     */
+    function main( args: {} ){
+        println( "Main" )
+    }
+
+}
+]]></content>
+<tabTrigger>class</tabTrigger>
+<scope>source,text</scope>
+<description>BoxLang Class</description>
+</snippet>

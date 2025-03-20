@@ -1,6 +1,6 @@
 <snippet>
 <content><![CDATA[
-expect(	${1} ).toBeTrue();
+expect(	${1} ).toBeTrue()
 ]]></content>
 	<tabTrigger>expectTrue</tabTrigger>
 	<scope>source,text</scope>

@@ -1,9 +1,14 @@
 <snippet>
 <content><![CDATA[
-feature( title="${1:A suite}", labels="", asyncAll=false, skip=false, body=function(){
+feature(
+    title="${1:A suite}",
+    labels="",
+    asyncAll=false,
+    skip=false,
+    body=() => {
 ${0}
 
-});]]></content>
+})]]></content>
 	<tabTrigger>featureFull</tabTrigger>
 	<scope>source,text</scope>
 	<description>TestBox BDD Feature With Arguments</description>
