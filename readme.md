@@ -25,6 +25,7 @@ Code completion for all major ColdBox + TestBox functions and scopes:
 - `logbox ➝` : "coldbox.system.logging.LogBox",
 - `wirebox ➝` : "coldbox.system.ioc.Injector",
 - `$assert` : "testbox.system.Assertion"
+- Router DSL (bare functions inside `config/Router.cfc`): `route()`, `resources()`, `apiResources()`, `group()`, `.to()`/`.toHandler()`/`.toView()`/`.toResponse()`/`.toRedirect()`, `.as()`, `.withCondition()`, `.withSSL()`, `.withVerbs()`, `.withNamespace()`, `.end()`, plus 8.1+/8.2+ additions: `.middleware()`, `middlewareGroup()`, `.withoutMiddleware()`, `.withCache()`, `.toSSE()`, `.toAi()`, `.toMCP()`, `.toAiGateway()`
 
 ### Code Skeleton Snippets
 

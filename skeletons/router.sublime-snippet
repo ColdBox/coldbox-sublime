@@ -34,6 +34,24 @@ component {
 			return { "error" : false, "data" : "Welcome to my awesome API!" };
 		} );
 
+		// RESTful resources: index, create, show, update, delete
+		resources( "users" );
+
+		// Named routes, view/response/redirect targets
+		route( "/contact" ).as( "contactPage" ).toHandler( "main.contact" );
+		route( "/terms" ).toView( "legal/terms" );
+		route( "/old-page" ).toRedirect( "/new-page", 301 );
+
+		// Groups + route-scoped middleware (8.2+)
+		middlewareGroup( "api", [ "RequireApiKey", "RateLimiter" ] );
+		group( { pattern : "/api", middleware : [ "api" ] }, function(){
+			route( "/users" ).toHandler( "users" );
+			route( "/health" ).withoutMiddleware( "api" ).toHandler( "health" );
+		} );
+
+		// Route-level caching (8.2+)
+		route( "/products/:id" ).withCache( timeout : 30, etag : true ).toHandler( "products.show" );
+
 		// @app_routes@
 
 		// Conventions-Based Routing
