@@ -1725,6 +1725,12 @@
 							"trigger": "flash.clear\tfn. (ColdBox:flash)",
 							"contents": "flash.clear( )"
 						}]}
+{
+				"scope": "meta.name.interpolated.hash - string, source.cfscript - source.sql - text.html.cfm - string - meta - comment, source.cfscript.embedded.cfml - string, source.sql, text, source.cfml.script, embedding.cfml",
+				"completions":
+				[
+		{
+							"trigger": "event.valueExists\tfn. (ColdBox:event)",
 							"contents": "event.valueExists( name=${1:any}, private=${2:true,false} )"
 						},{
 							"trigger": "html.$htmlHead\tfn. (ColdBox:html)",
@@ -2116,4 +2122,85 @@
 						},{
 							"trigger": "controller.validateAction\tfn. (ColdBox:controller)",
 							"contents": "controller.validateAction( action=${1:any}, inclusion=${2:any}, exclusion=${3:any} )"
+						},{
+							"trigger": "route\tfn. (ColdBox:Router)",
+							"contents": "route( pattern=${1:any}, target=${2:any}, name=${3:any} )"
+						},{
+							"trigger": "resources\tfn. (ColdBox:Router)",
+							"contents": "resources( route=${1:any}, handler=${2:any}, parameterName=${3:id}, only=${4:[]}, except=${5:[]} )"
+						},{
+							"trigger": "apiResources\tfn. (ColdBox:Router)",
+							"contents": "apiResources( route=${1:any}, handler=${2:any}, parameterName=${3:id}, only=${4:[]}, except=${5:[]} )"
+						},{
+							"trigger": "group\tfn. (ColdBox:Router)",
+							"contents": "group( options=${1:{}}, fn=${2:function(){}} )"
+						},{
+							"trigger": "to\tfn. (ColdBox:Router)",
+							"contents": "to( target=${1:any} )"
+						},{
+							"trigger": "toHandler\tfn. (ColdBox:Router)",
+							"contents": "toHandler( target=${1:any} )"
+						},{
+							"trigger": "toView\tfn. (ColdBox:Router)",
+							"contents": "toView( view=${1:any}, layout=${2:any} )"
+						},{
+							"trigger": "toResponse\tfn. (ColdBox:Router)",
+							"contents": "toResponse( function( event, rc, prc ){\n\t${1}\n} )"
+						},{
+							"trigger": "toRedirect\tfn. (ColdBox:Router)",
+							"contents": "toRedirect( target=${1:any}, statusCode=${2:301} )"
+						},{
+							"trigger": "as\tfn. (ColdBox:Router)",
+							"contents": "as( name=${1:any} )"
+						},{
+							"trigger": "withCondition\tfn. (ColdBox:Router)",
+							"contents": "withCondition( function( route, params, event ){\n\t${1}\n} )"
+						},{
+							"trigger": "withSSL\tfn. (ColdBox:Router)",
+							"contents": "withSSL( )"
+						},{
+							"trigger": "withVerbs\tfn. (ColdBox:Router)",
+							"contents": "withVerbs( verbs=${1:[]} )"
+						},{
+							"trigger": "withNamespace\tfn. (ColdBox:Router)",
+							"contents": "withNamespace( namespace=${1:any} )"
+						},{
+							"trigger": "end\tfn. (ColdBox:Router)",
+							"contents": "end( )"
+						},{
+							"trigger": "middleware\tfn. (ColdBox:Router - 8.2+)",
+							"contents": "middleware( target=${1:any}, point=${2:preProcess,postProcess} )"
+						},{
+							"trigger": "middlewareGroup\tfn. (ColdBox:Router - 8.2+)",
+							"contents": "middlewareGroup( name=${1:any}, targets=${2:[]} )"
+						},{
+							"trigger": "withoutMiddleware\tfn. (ColdBox:Router - 8.2+)",
+							"contents": "withoutMiddleware( target=${1:any} )"
+						},{
+							"trigger": "withCache\tfn. (ColdBox:Router - 8.2+)",
+							"contents": "withCache( timeout=${1:any}, cacheProvider=${2:any}, cacheSuffix=${3:any}, cacheInclude=${4:any}, cacheExclude=${5:any}, cacheFilter=${6:any}, etag=${7:true,false}, etagWeak=${8:true,false}, lastModified=${9:true,false}, cacheControl=${10:{}} )"
+						},{
+							"trigger": "toSSE\tfn. (ColdBox:Router - 8.2+)",
+							"contents": "toSSE( target=${1:any} )"
+						},{
+							"trigger": "toAi\tfn. (ColdBox:Router - 8.1+)",
+							"contents": "toAi( runnable=${1:any} )"
+						},{
+							"trigger": "toMCP\tfn. (ColdBox:Router - 8.1+)",
+							"contents": "toMCP( server=${1:any} )"
+						},{
+							"trigger": "toAiGateway\tfn. (ColdBox:Router - 8.2+)",
+							"contents": "toAiGateway( name=${1:any}, session=${2:any} )"
+						},{
+							"trigger": "event.etag\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.etag( value=${1:any}, weak=${2:true,false} )"
+						},{
+							"trigger": "event.lastModified\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.lastModified( value=${1:any} )"
+						},{
+							"trigger": "event.cacheControl\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.cacheControl( directives=${1:{}} )"
+						},{
+							"trigger": "event.sse\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.sse( function( emitter ){\n\t${1}\n} )"
 						}]}
