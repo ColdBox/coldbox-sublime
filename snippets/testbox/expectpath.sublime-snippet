@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+expect(	${1} ).toHavePathValue( "${2:path.to.value}", ${3} )
+]]></content>
+	<tabTrigger>expectpath</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Data Path Expectation (7.1+)</description>
+</snippet>

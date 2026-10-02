@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+expect(	${1} ).withContext( "${2:context}" ).${3:toBe}( ${4} )
+]]></content>
+	<tabTrigger>withcontext</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Expect with failure context (7.1+)</description>
+</snippet>

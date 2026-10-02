@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+var results = new testbox.system.TestBox( bundles = "${1:tests.specs}" ).dryRun()
+]]></content>
+	<tabTrigger>dryrun</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Dry Run (7.0+)</description>
+</snippet>

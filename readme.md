@@ -1,150 +1,170 @@
-# A ColdBox Platform Bundle for Sublime Text 3+
+# ColdBox Platform Bundle for Sublime Text
 
-Get the latest Sublime Text from http://www.sublimetext.com
+Code completions and snippets for the [ColdBox Platform](https://coldbox.org) and [TestBox](https://testbox.ortusbooks.com) on **Sublime Text 4**.
 
-## Target Platforms
+## Supported Versions
 
-- ColdBox 7.X.X+
-- TestBox 6.X.X
+| Library | Supported Versions | Notes |
+|---------|--------------------|-------|
+| ColdBox | **8.0.0 and beyond** | Includes WireBox, CacheBox and LogBox |
+| TestBox | **7.0.0 and beyond** | Includes the 7.1 expectation and assertion additions |
+| Sublime Text | **4** | |
+
+| Language / Engine | Status |
+|-------------------|--------|
+| BoxLang | Preferred |
+| Lucee | Supported |
+| Adobe ColdFusion | Supported |
+
+> Using ColdBox 7 or TestBox 6? Use the `v3.2.x` tags of this package.
+
+Completions and snippets that arrived in a specific release are labeled with the version in the completion popup, for example `(ColdBox:Router - 8.2+)` or `(TestBox:Expectation - 7.1+)`.
+
+## Installation
+
+### Package Control (recommended)
+
+1. Open the Command Palette (`Cmd/Ctrl + Shift + P`)
+2. Select **Package Control: Install Package**
+3. Search for **ColdBox** and install it
+
+### Manual
+
+Clone the repository into your Sublime Text `Packages` directory (use **Preferences > Browse Packages...** to find it).
+
+```bash
+# macOS
+cd ~/Library/Application\ Support/Sublime\ Text/Packages/
+# Linux
+cd ~/.config/sublime-text/Packages/
+# Windows (PowerShell)
+cd "$env:APPDATA\Sublime Text\Packages"
+
+git clone https://github.com/ColdBox/coldbox-sublime.git coldbox
+```
 
 ## Features
 
-This bundle includes functionality not only for ColdBox MVC, but also for TestBox BDD/TDD, WireBox, CacheBox and LogBox.
-
 ### Code Insight
 
-Code completion for all major ColdBox + TestBox functions and scopes:
+Completions for the major ColdBox, WireBox, CacheBox, LogBox and TestBox objects. Type the scope name and a dot to see its methods.
 
-- `binder ➝` : "coldbox.system.ioc.config.Binder",
-- `cachebox ➝` : "coldbox.system.cache.CacheFactory"
-- `controller ➝` : "coldbox.system.web.Controller",
-- `event ➝` : "coldbox.system.web.context.RequestContext",
-- `flash ➝` : "coldbox.system.web.flash.AbstractFlashScope",
-- `html ➝` : "coldbox.system.core.dynamic.HTMLHelper"
-- `log ➝` : "coldbox.system.logging.Logger",
-- `logbox ➝` : "coldbox.system.logging.LogBox",
-- `wirebox ➝` : "coldbox.system.ioc.Injector",
-- `$assert` : "testbox.system.Assertion"
-- Router DSL (bare functions inside `config/Router.cfc`): `route()`, `resources()`, `apiResources()`, `group()`, `.to()`/`.toHandler()`/`.toView()`/`.toResponse()`/`.toRedirect()`, `.as()`, `.withCondition()`, `.withSSL()`, `.withVerbs()`, `.withNamespace()`, `.end()`, plus 8.1+/8.2+ additions: `.middleware()`, `middlewareGroup()`, `.withoutMiddleware()`, `.withCache()`, `.toSSE()`, `.toAi()`, `.toMCP()`, `.toAiGateway()`
+| Scope | Class |
+|-------|-------|
+| `event` | `coldbox.system.web.context.RequestContext` |
+| `controller` | `coldbox.system.web.Controller` |
+| `flash` | `coldbox.system.web.flash.AbstractFlashScope` |
+| `html` | `coldbox.system.modules.HTMLHelper.models.HTMLHelper` |
+| `binder` | `coldbox.system.ioc.config.Binder` |
+| `wirebox` | `coldbox.system.ioc.Injector` |
+| `cachebox` | `coldbox.system.cache.CacheFactory` |
+| `logbox` | `coldbox.system.logging.LogBox` |
+| `log` | `coldbox.system.logging.Logger` |
+| `assert` | `testbox.system.Assertion` |
 
-### Code Skeleton Snippets
+Also included:
 
-- `apiResourceHandler` : Creates a ColdBox API Resource Handler
-- `cachebox-config ➝` : Creates a new CacheBox.cfc configuration file
-- `config ➝` : Creates a new ColdBox.cfc configuration file
-- `class ➝` : Creates a new BoxLang class
-- `cfc ➝` : Creates a new ColdFusion script CFC
-- `bdd ➝` : Creates a TestBox BDD Bundle
-- `box ➝` : Creates a `box.json` template
-- `function ➝` : Creates a new ColdFusion script function
-- `handler ➝` : Creates a ColdBox Event Handler
-- `inject ➝` : Creates a new property with an `inject` annotation for WireBox
-- `interceptor ➝` : Creates a ColdBox Interceptor
-- `model ➝` : Creates a model object
-- `point ➝` : Creates a new interception point method
-- `property ➝` : Creates a new ColdFusion script property
-- `routes ➝` : Creates a new routing file
-- `resthandler ➝` : Creates a ColdBox Rest Handler
-- `resourcehandler` : Creates a ColdBox Resource Handler
-- `unit ➝` : Creates a TestBox TDD xUnit Bundle
+- **Handlers, RestHandlers, Interceptors and the framework super type** methods
+- **Router DSL** (bare functions inside `config/Router`): `route()`, `resources()`, `apiResources()`, `group()`, the verb helpers (`get()`, `post()`, `put()`, `patch()`, `delete()`), `.to()`, `.toHandler()`, `.toAction()`, `.toView()`, `.toResponse()`, `.toRedirect()`, `.as()`, `.withCondition()`, `.withSSL()`, `.withVerbs()`, `.withNamespace()`, `.withDomain()`, `.constraints()`, `.end()` and more
+- **ColdBox 8.1+/8.2+ additions**: `.middleware()`, `middlewareGroup()`, `.withoutMiddleware()`, `.withCache()`, `.toSSE()`, `.toAi()`, `.toMCP()`, `.toAiGateway()`, plus `event.sse()`, `event.etag()`, `event.lastModified()` and `event.cacheControl()`
+- **TestBox expectations**: every `expect()` matcher, including the 7.1 additions: `toBeTruthy`, `toBeFalsy`, `toHaveSize`, `toThrowMatching`, `toIncludeAll/Any/None`, Set matchers, Range matchers and data path matchers (`toHavePath`, `toHavePathValue`, ...)
+- **TestBox collection and grouped checks**: `expectAll()`, `expectAny()`, `expectSome()`, `expectNone()`, `withContext()`, `assertAll()`, `assert.all()`
+- **TestBox `dryRun()`** to discover specs without executing them
 
-### Handler Code Snippets
+### Snippets
 
-- `action ➝` : Creates a handler action
-- `around` : Creates an *aroundHandler()* implicit action
-- `onerror ➝` : Creates an *onError()* implicit action
-- `onhttp ➝` : Creates an *onInvalidHTTPMethod()* implict action
-- `onma ➝` : Creates an *onMissingAction()* implicit action
-- `postaction ➝` : Creates a *postXXX()* implicit action
-- `post ➝` : Creates a *postHandler()* implicit action
-- `preaction ➝` : Creates a *preXXX()* implicit action
-- `pre ➝` : Creates a *preHandler()* implicit action
+Type the trigger and press `Tab`.
 
-### ORM Code Snippets
+#### Skeletons
 
-- `active ➝` : Creates a ColdBox Active Entity
-- `entity ➝` : Creates an ORM Entity
-- `ormservice ➝` : Creates a Base ORM service
-- `virtualservice ➝` : Creates a virtual entity service
-- `o2m` : Creates a one-to-many property definition
-- `m2o` : Creates a many-to-one property definition
-- `m2m` : Creates a many-to-many property definition
+| Trigger | Creates |
+|---------|---------|
+| `config` | `ColdBox` configuration file |
+| `router` | Router file |
+| `handler` | Event handler |
+| `resthandler` | REST handler |
+| `resourcehandler` | Resource handler |
+| `apiResourceHandler` | API resource handler |
+| `model` | Model object |
+| `interceptor` | Interceptor |
+| `point` | Interception point method |
+| `cachebox-config` | `CacheBox` configuration file |
+| `box` | `box.json` descriptor |
 
-### TestBox Snippets
+#### Language
 
-- `assert` : An `assert()` method
-- `afterAll ➝` : An `afterAll()` BDD life-cycle method
-- `aftereach ➝` : An `afterEach()` BDD closure
-- `afterTests ➝` : An `afterTests()` xUnit life-cycle method
-- `aroundEach ➝` : An `aroundEach()` BDD closure
-- `bdd ➝` : Creates a new BDD Test Bundle CFC
-- `beforeAll ➝` : An `beforeAll()` BDD life-cycle method
-- `beforeeach ➝` : A `beforeEach()` BDD closure
-- `beforeTests ➝` : An `beforeTests()` xUnit life-cycle method
-- `console ➝` : TestBox send some output to the console
-- `debug ➝` : Writes up a non-duplicate `debug()` call
-- `debugduplicate ➝` : Writes up a `debug()` call with duplicate
-- `describe ➝` : A `describe` suite
-- `describeFull ➝` : A `describe` suite with all arguments
-- `expect ➝` : Starts an expectation DSL with a `toBe()` addition
-- `expectAll ➝` : Starts a collection expectation DSL with a `toBe()` addition
-- `expectFalse ➝` : Does a false expectation expression
-- `expectTrue ➝` : Does a true expectation expression
-- `expectToThrow ➝` : Starts an expectation that throws an exception
-- `feature, featureFull ➝` : Starts a `feature()` block
-- `given, givenFull ➝` : Starts a `given()` block
-- `it ➝` : A test spec
-- `itFull ➝` : A test spec with all arguments
-- `setup ➝` : An `setup()` xUnit life-cycle method
-- `story, storyFull ➝` : Starts a `story()` block
-- `teardown ➝` : An `teardown()` xUnit life-cycle method
-- `then, thenFull ➝` : Starts a `then()` block
-- `unit ➝` : Creates a new xUnit Test Bundle CFC
-- `when, whenFull ➝` : Starts a `when()` block
+| Trigger | BoxLang | CFML |
+|---------|---------|------|
+| `class` | Class | |
+| `cfc` | | Script component |
+| `function` | Function | Script function |
+| `prop` | Property | Script property |
+| `inject` | WireBox property injection | WireBox property injection |
 
-### ColdBox Testing Snippets
+#### Handlers
 
-- `integration ➝` : Creates a top down integration BDD test case
-- `interceptorTest ➝` : Creates an Interceptor test case
-- `modelTest ➝` : Creates a model test case
-- `testaction ➝` : Creates an integration spec case for an event action
+| Trigger | Creates |
+|---------|---------|
+| `action` | Handler action |
+| `pre` / `post` | `preHandler()` / `postHandler()` |
+| `preaction` / `postaction` | `preXXX()` / `postXXX()` |
+| `around` | `aroundHandler()` |
+| `onerror` | `onError()` |
+| `onhttp` | `onInvalidHTTPMethod()` |
+| `onma` | `onMissingAction()` |
 
-### WireBox Code Snippets
+#### WireBox
 
-- `aspect ➝` : Creates a WireBox AOP Aspect object
-- `binder ➝` : Creates a basic WireBox configuration binder
-- `inject ➝` : WireBox property injection
-- `provider ➝` : Creates a WireBox provider method
-- `setter ➝` : Creates a WireBox setter injection
+| Trigger | Creates |
+|---------|---------|
+| `binder` | WireBox configuration binder |
+| `inject` | Property injection |
+| `setter` | Setter injection |
+| `provider` | Provider method |
+| `aspect` | AOP aspect |
 
-## Installation Instructions
+#### ORM
 
-### With Package Control
+| Trigger | Creates |
+|---------|---------|
+| `entity` | ORM entity |
+| `active` | Active entity |
+| `ormservice` | Base ORM service |
+| `virtualservice` | Virtual entity service |
+| `o2m` / `m2o` / `m2m` | Relationship properties |
 
-If you have the [Package Control](http://wbond.net/sublime_packages/package_control) package installed, you can install *ColdBox Platform Bundle* from inside Sublime Text itself. Open the Command Palette and select "Package Control: Install Package", then search for *ColdBox*.
+#### TestBox
 
-### Without Package Control
+| Trigger | Creates |
+|---------|---------|
+| `bdd` / `unit` | BDD / xUnit test bundle |
+| `describe`, `it`, `feature`, `story`, `given`, `when`, `then` | BDD blocks (add `Full` for all arguments) |
+| `beforeall`, `afterall`, `before`, `after`, `around` | BDD life-cycle closures |
+| `beforetests`, `aftertests`, `setup`, `teardown` | xUnit life-cycle methods |
+| `expect`, `expectTrue`, `expectFalse`, `expectToThrow` | Expectations |
+| `expectall`, `expectany` `7.1+`, `expectsome` `7.1+`, `expectnone` `7.1+` | Collection expectations |
+| `withcontext` `7.1+` | Expectation with failure context |
+| `expectpath` `7.1+` | Data path expectation |
+| `assert`, `assertall` `7.1+` | Assertions |
+| `dryrun` `7.0+` | Discover specs without running them |
+| `debug`, `debugduplicate`, `console` | Debug output |
 
-#### Mac
+#### ColdBox Testing
 
-```bash
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
-git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
-```
+| Trigger | Creates |
+|---------|---------|
+| `integrationTest` | Integration BDD test |
+| `testaction` | Integration spec for an event action |
+| `interceptorTest` | Interceptor test |
+| `modelTest` | Model test |
 
-#### Linux (Ubuntu like distros)
+## Contributing
 
-```bash
-cd ~/.config/sublime-text-3/Packages/
-git clone https://github.com/lmajano/cbox-coldbox-sublime.git coldbox
-```
-
-#### Windows 7
-
-`Copy the directory to: "C:\Users\<username>\AppData\Roaming\Sublime Text 3\Packages"`
+Issues and pull requests are welcome at <https://github.com/ColdBox/coldbox-sublime>. See the [changelog](changelog.md) for release history.
 
 ## References
 
-- Sublimetext API - https://www.sublimetext.com/docs/api_reference.html
-- Unoffical (but very good) docs - https://docs.sublimetext.info/index.html
-- ColdFusion Sublime Text bundle - https://github.com/SublimeText/ColdFusion
+- [ColdBox Documentation](https://coldbox.ortusbooks.com)
+- [TestBox Documentation](https://testbox.ortusbooks.com)
+- [Sublime Text API](https://www.sublimetext.com/docs/api_reference.html)
+- [ColdFusion Sublime Text bundle](https://github.com/SublimeText/ColdFusion)

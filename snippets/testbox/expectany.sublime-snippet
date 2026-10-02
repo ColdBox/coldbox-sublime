@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+expectAny(	${1} ).${2:toBe}( ${3} )
+]]></content>
+	<tabTrigger>expectany</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox ExpectAny (7.1+)</description>
+</snippet>

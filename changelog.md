@@ -1,5 +1,16 @@
 # Changelog
 
+## v3.3.0
+
+- Now targets ColdBox 8.0+ and TestBox 7.0+ on Sublime Text 4
+- New TestBox 7.1 completions: all `expect()` matchers (truthy, size, throw matching, include all/any/none, Set, Range and data path matchers), `withContext()`, `expectAny()`, `expectSome()`, `expectNone()`, `assertAll()` and the matching `assert.*` methods
+- New TestBox 7.0 `dryRun()` completion
+- New ColdBox 8.2 `event` completions: SSE helpers, `isNoExecution()`, `toHTTPDate()`, `getOriginalHTTPMethod()`
+- New Router completions: verb helpers, `toAction()`, `withHandler()`, `withAction()`, `withModule()`, `withDomain()`, `constraints()`, `header()`, `meta()`, `rc()`, `prc()` and more
+- New `controller.getColdBoxVersion()` completion
+- New snippets: `expectany`, `expectsome`, `expectnone`, `withcontext`, `expectpath`, `assertall`, `dryrun`
+- Rewrote the readme with a supported versions table and a clearer structure
+
 ## v3.2.1
 
 - Fixed invalid completion JSON so Sublime Text loads all ColdBox completions

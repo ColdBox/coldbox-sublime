@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+expectNone(	${1} ).${2:toBe}( ${3} )
+]]></content>
+	<tabTrigger>expectnone</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox ExpectNone (7.1+)</description>
+</snippet>
