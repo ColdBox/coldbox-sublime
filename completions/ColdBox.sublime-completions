@@ -2198,4 +2198,427 @@
 						},{
 							"trigger": "event.sse\tfn. (ColdBox:event - 8.2+)",
 							"contents": "event.sse( function( emitter ){\n\t${1}\n} )"
+						},{
+							"trigger": "withContext\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "withContext( message=\"${1:}\" )"
+						},{
+							"trigger": "toBeTrue\tfn. (TestBox:Expectation)",
+							"contents": "toBeTrue( message=${1:any} )"
+						},{
+							"trigger": "toBeFalse\tfn. (TestBox:Expectation)",
+							"contents": "toBeFalse( message=${1:any} )"
+						},{
+							"trigger": "toBe\tfn. (TestBox:Expectation)",
+							"contents": "toBe( expected=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeWithCase\tfn. (TestBox:Expectation)",
+							"contents": "toBeWithCase( expected=\"${1:}\", message=${2:any} )"
+						},{
+							"trigger": "toBeNull\tfn. (TestBox:Expectation)",
+							"contents": "toBeNull( message=${1:any} )"
+						},{
+							"trigger": "toBeInstanceOf\tfn. (TestBox:Expectation)",
+							"contents": "toBeInstanceOf( typeName=\"${1:}\", message=${2:any} )"
+						},{
+							"trigger": "toMatch\tfn. (TestBox:Expectation)",
+							"contents": "toMatch( regex=\"${1:}\", message=${2:any} )"
+						},{
+							"trigger": "toStartWith\tfn. (TestBox:Expectation)",
+							"contents": "toStartWith( needle=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toStartWithCase\tfn. (TestBox:Expectation)",
+							"contents": "toStartWithCase( needle=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toEndWith\tfn. (TestBox:Expectation)",
+							"contents": "toEndWith( needle=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toEndWithCase\tfn. (TestBox:Expectation)",
+							"contents": "toEndWithCase( needle=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toMatchWithCase\tfn. (TestBox:Expectation)",
+							"contents": "toMatchWithCase( regex=\"${1:}\", message=${2:any} )"
+						},{
+							"trigger": "toBeTypeOf\tfn. (TestBox:Expectation)",
+							"contents": "toBeTypeOf( type=\"${1:}\", message=${2:any} )"
+						},{
+							"trigger": "toBeEmpty\tfn. (TestBox:Expectation)",
+							"contents": "toBeEmpty( message=${1:any} )"
+						},{
+							"trigger": "toHaveKey\tfn. (TestBox:Expectation)",
+							"contents": "toHaveKey( key=\"${1:}\", message=${2:any} )"
+						},{
+							"trigger": "toHaveKeyWithCase\tfn. (TestBox:Expectation)",
+							"contents": "toHaveKeyWithCase( key=\"${1:}\", message=${2:any} )"
+						},{
+							"trigger": "toHaveDeepKey\tfn. (TestBox:Expectation)",
+							"contents": "toHaveDeepKey( key=\"${1:}\", message=${2:any} )"
+						},{
+							"trigger": "toHaveLength\tfn. (TestBox:Expectation)",
+							"contents": "toHaveLength( length=${1:numeric}, message=${2:any} )"
+						},{
+							"trigger": "toThrow\tfn. (TestBox:Expectation)",
+							"contents": "toThrow( type=${1:any}, regex=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "notToThrow\tfn. (TestBox:Expectation)",
+							"contents": "notToThrow( type=${1:any}, regex=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "toBeCloseTo\tfn. (TestBox:Expectation)",
+							"contents": "toBeCloseTo( expected=${1:any}, delta=${2:any}, datePart=${3:any}, message=${4:any} )"
+						},{
+							"trigger": "toBeBetween\tfn. (TestBox:Expectation)",
+							"contents": "toBeBetween( min=${1:any}, max=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "toContain\tfn. (TestBox:Expectation)",
+							"contents": "toContain( needle=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toContainWithCase\tfn. (TestBox:Expectation)",
+							"contents": "toContainWithCase( needle=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toInclude\tfn. (TestBox:Expectation)",
+							"contents": "toInclude( needle=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeIn\tfn. (TestBox:Expectation)",
+							"contents": "toBeIn( target=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeInWithCase\tfn. (TestBox:Expectation)",
+							"contents": "toBeInWithCase( target=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toIncludeWithCase\tfn. (TestBox:Expectation)",
+							"contents": "toIncludeWithCase( needle=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeGT\tfn. (TestBox:Expectation)",
+							"contents": "toBeGT( target=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeGTE\tfn. (TestBox:Expectation)",
+							"contents": "toBeGTE( target=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeLT\tfn. (TestBox:Expectation)",
+							"contents": "toBeLT( target=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeLTE\tfn. (TestBox:Expectation)",
+							"contents": "toBeLTE( target=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeJSON\tfn. (TestBox:Expectation)",
+							"contents": "toBeJSON( message=${1:any} )"
+						},{
+							"trigger": "toSatisfy\tfn. (TestBox:Expectation)",
+							"contents": "toSatisfy( target=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeTruthy\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeTruthy( message=${1:any} )"
+						},{
+							"trigger": "toBeFalsy\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeFalsy( message=${1:any} )"
+						},{
+							"trigger": "toBeSameInstanceAs\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeSameInstanceAs( expected=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toHaveSize\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toHaveSize( length=${1:numeric}, message=${2:any} )"
+						},{
+							"trigger": "toThrowMatching\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toThrowMatching( predicate=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toIncludeAll\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toIncludeAll( needles=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toIncludeAny\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toIncludeAny( needles=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toIncludeNone\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toIncludeNone( needles=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeASet\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeASet( message=${1:any} )"
+						},{
+							"trigger": "toEqualSet\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toEqualSet( expected=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeSubsetOf\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeSubsetOf( expected=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeSupersetOf\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeSupersetOf( expected=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeDisjointFrom\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeDisjointFrom( expected=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toHaveUnion\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toHaveUnion( other=${1:any}, expected=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "toHaveIntersection\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toHaveIntersection( other=${1:any}, expected=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "toHaveDifference\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toHaveDifference( other=${1:any}, expected=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "toHaveSymmetricDifference\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toHaveSymmetricDifference( other=${1:any}, expected=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "toBeRange\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeRange( message=${1:any} )"
+						},{
+							"trigger": "toContainValue\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toContainValue( value=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toContainRange\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toContainRange( expected=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeInRange\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeInRange( range=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeBeforeRange\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeBeforeRange( expected=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeAfterRange\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeAfterRange( expected=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toBeBounded\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeBounded( message=${1:any} )"
+						},{
+							"trigger": "toBeUnbounded\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeUnbounded( message=${1:any} )"
+						},{
+							"trigger": "toBeHalfBounded\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeHalfBounded( message=${1:any} )"
+						},{
+							"trigger": "toBeIterable\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeIterable( message=${1:any} )"
+						},{
+							"trigger": "toBeAscending\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeAscending( message=${1:any} )"
+						},{
+							"trigger": "toBeDescending\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toBeDescending( message=${1:any} )"
+						},{
+							"trigger": "toHaveStep\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toHaveStep( step=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "toClampTo\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toClampTo( value=${1:any}, expected=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "toHavePath\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toHavePath( path=\"${1:}\", message=${2:any} )"
+						},{
+							"trigger": "toHavePathValue\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toHavePathValue( path=\"${1:}\", expected=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "toHavePathType\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toHavePathType( path=\"${1:}\", type=\"${2:}\", message=${3:any} )"
+						},{
+							"trigger": "toHavePathSatisfying\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "toHavePathSatisfying( path=\"${1:}\", predicate=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "path\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "path( path=\"${1:}\" )"
+						},{
+							"trigger": "queryPath\tfn. (TestBox:Expectation - 7.1+)",
+							"contents": "queryPath( path=\"${1:}\" )"
+						},{
+							"trigger": "assert.all\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.all( executables=${1:any}, heading=\"${2:}\" )"
+						},{
+							"trigger": "assert.isTruthy\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isTruthy( actual=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "assert.isFalsy\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isFalsy( actual=${1:any}, message=${2:any} )"
+						},{
+							"trigger": "assert.includesAll\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.includesAll( target=${1:any}, needles=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "assert.includesAny\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.includesAny( target=${1:any}, needles=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "assert.includesNone\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.includesNone( target=${1:any}, needles=${2:any}, message=${3:any} )"
+						},{
+							"trigger": "assert.isASet\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isASet( actual=${1:any}, message=\"${2:}\" )"
+						},{
+							"trigger": "assert.isEqualSet\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isEqualSet( expected=${1:any}, actual=${2:any}, message=\"${3:}\" )"
+						},{
+							"trigger": "assert.isSubsetOf\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isSubsetOf( expected=${1:any}, actual=${2:any}, message=\"${3:}\" )"
+						},{
+							"trigger": "assert.isSupersetOf\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isSupersetOf( expected=${1:any}, actual=${2:any}, message=\"${3:}\" )"
+						},{
+							"trigger": "assert.isDisjointFrom\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isDisjointFrom( expected=${1:any}, actual=${2:any}, message=\"${3:}\" )"
+						},{
+							"trigger": "assert.hasUnion\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.hasUnion( other=${1:any}, expected=${2:any}, actual=${3:any}, message=\"${4:}\" )"
+						},{
+							"trigger": "assert.hasIntersection\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.hasIntersection( other=${1:any}, expected=${2:any}, actual=${3:any}, message=\"${4:}\" )"
+						},{
+							"trigger": "assert.hasDifference\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.hasDifference( other=${1:any}, expected=${2:any}, actual=${3:any}, message=\"${4:}\" )"
+						},{
+							"trigger": "assert.hasSymmetricDifference\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.hasSymmetricDifference( other=${1:any}, expected=${2:any}, actual=${3:any}, message=\"${4:}\" )"
+						},{
+							"trigger": "assert.isRange\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isRange( actual=${1:any}, message=\"${2:}\" )"
+						},{
+							"trigger": "assert.rangeContainsValue\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.rangeContainsValue( actual=${1:any}, value=${2:any}, message=\"${3:}\" )"
+						},{
+							"trigger": "assert.rangeContainsRange\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.rangeContainsRange( actual=${1:any}, expected=${2:any}, message=\"${3:}\" )"
+						},{
+							"trigger": "assert.valueInRange\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.valueInRange( actual=${1:any}, range=${2:any}, message=\"${3:}\" )"
+						},{
+							"trigger": "assert.rangeBeforeRange\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.rangeBeforeRange( actual=${1:any}, expected=${2:any}, message=\"${3:}\" )"
+						},{
+							"trigger": "assert.rangeAfterRange\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.rangeAfterRange( actual=${1:any}, expected=${2:any}, message=\"${3:}\" )"
+						},{
+							"trigger": "assert.isRangeBounded\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isRangeBounded( actual=${1:any}, message=\"${2:}\" )"
+						},{
+							"trigger": "assert.isRangeUnbounded\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isRangeUnbounded( actual=${1:any}, message=\"${2:}\" )"
+						},{
+							"trigger": "assert.isRangeHalfBounded\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isRangeHalfBounded( actual=${1:any}, message=\"${2:}\" )"
+						},{
+							"trigger": "assert.isRangeIterable\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isRangeIterable( actual=${1:any}, message=\"${2:}\" )"
+						},{
+							"trigger": "assert.isRangeAscending\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isRangeAscending( actual=${1:any}, message=\"${2:}\" )"
+						},{
+							"trigger": "assert.isRangeDescending\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isRangeDescending( actual=${1:any}, message=\"${2:}\" )"
+						},{
+							"trigger": "assert.isRangeEmpty\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.isRangeEmpty( actual=${1:any}, message=\"${2:}\" )"
+						},{
+							"trigger": "assert.rangeHasStep\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.rangeHasStep( actual=${1:any}, step=${2:any}, message=\"${3:}\" )"
+						},{
+							"trigger": "assert.rangeClampTo\tfn. (TestBox:assert - 7.1+)",
+							"contents": "assert.rangeClampTo( actual=${1:any}, value=${2:any}, expected=${3:any}, message=\"${4:}\" )"
+						},{
+							"trigger": "assertAll\tfn. (TestBox:BaseSpec - 7.1+)",
+							"contents": "assertAll( executables=${1:any}, heading=\"${2:}\" )"
+						},{
+							"trigger": "expectAny\tfn. (TestBox:BaseSpec - 7.1+)",
+							"contents": "expectAny( actual=${1:any} )"
+						},{
+							"trigger": "expectSome\tfn. (TestBox:BaseSpec - 7.1+)",
+							"contents": "expectSome( actual=${1:any}, min=${2:numeric}, max=${3:numeric} )"
+						},{
+							"trigger": "expectNone\tfn. (TestBox:BaseSpec - 7.1+)",
+							"contents": "expectNone( actual=${1:any} )"
+						},{
+							"trigger": "getCBMockData\tfn. (TestBox:BaseSpec)",
+							"contents": "getCBMockData( )"
+						},{
+							"trigger": "dryRun\tfn. (TestBox:TestBox - 7.0+)",
+							"contents": "dryRun( testBundles=${1:any}, testSuites=${2:any}, testSpecs=${3:any} )"
+						},{
+							"trigger": "event.isSSE\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.isSSE( )"
+						},{
+							"trigger": "event.isSSESupported\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.isSSESupported( )"
+						},{
+							"trigger": "event.wantsSSE\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.wantsSSE( )"
+						},{
+							"trigger": "event.getSSEOptions\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.getSSEOptions( )"
+						},{
+							"trigger": "event.isNoExecution\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.isNoExecution( )"
+						},{
+							"trigger": "event.toHTTPDate\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.toHTTPDate( value=${1:any} )"
+						},{
+							"trigger": "event.getOriginalHTTPMethod\tfn. (ColdBox:event - 8.2+)",
+							"contents": "event.getOriginalHTTPMethod( )"
+						},{
+							"trigger": "findRouteByName\tfn. (ColdBox:Router)",
+							"contents": "findRouteByName( name=${1:any} )"
+						},{
+							"trigger": "addNamespace\tfn. (ColdBox:Router)",
+							"contents": "addNamespace( pattern=${1:any}, namespace=${2:any}, append=${3:true,false} )"
+						},{
+							"trigger": "get\tfn. (ColdBox:Router)",
+							"contents": "get( pattern=${1:any}, target=${2:any} )"
+						},{
+							"trigger": "post\tfn. (ColdBox:Router)",
+							"contents": "post( pattern=${1:any}, target=${2:any} )"
+						},{
+							"trigger": "put\tfn. (ColdBox:Router)",
+							"contents": "put( pattern=${1:any}, target=${2:any} )"
+						},{
+							"trigger": "delete\tfn. (ColdBox:Router)",
+							"contents": "delete( pattern=${1:any}, target=${2:any} )"
+						},{
+							"trigger": "patch\tfn. (ColdBox:Router)",
+							"contents": "patch( pattern=${1:any}, target=${2:any} )"
+						},{
+							"trigger": "options\tfn. (ColdBox:Router)",
+							"contents": "options( pattern=${1:any}, target=${2:any} )"
+						},{
+							"trigger": "header\tfn. (ColdBox:Router)",
+							"contents": "header( name=${1:any}, value=${2:any}, overwrite=${3:true,false} )"
+						},{
+							"trigger": "headers\tfn. (ColdBox:Router)",
+							"contents": "headers( map=${1:any}, overwrite=${2:true,false} )"
+						},{
+							"trigger": "meta\tfn. (ColdBox:Router)",
+							"contents": "meta( map=${1:any}, overwrite=${2:true,false} )"
+						},{
+							"trigger": "rc\tfn. (ColdBox:Router)",
+							"contents": "rc( name=${1:any}, value=${2:any}, overwrite=${3:true,false} )"
+						},{
+							"trigger": "rcAppend\tfn. (ColdBox:Router)",
+							"contents": "rcAppend( map=${1:any}, overwrite=${2:true,false} )"
+						},{
+							"trigger": "prc\tfn. (ColdBox:Router)",
+							"contents": "prc( name=${1:any}, value=${2:any}, overwrite=${3:true,false} )"
+						},{
+							"trigger": "prcAppend\tfn. (ColdBox:Router)",
+							"contents": "prcAppend( map=${1:any}, overwrite=${2:true,false} )"
+						},{
+							"trigger": "constraints\tfn. (ColdBox:Router)",
+							"contents": "constraints( map=${1:any} )"
+						},{
+							"trigger": "withHandler\tfn. (ColdBox:Router)",
+							"contents": "withHandler( handler=${1:any} )"
+						},{
+							"trigger": "withAction\tfn. (ColdBox:Router)",
+							"contents": "withAction( action=${1:any} )"
+						},{
+							"trigger": "withModule\tfn. (ColdBox:Router)",
+							"contents": "withModule( name=${1:any} )"
+						},{
+							"trigger": "withDomain\tfn. (ColdBox:Router)",
+							"contents": "withDomain( domain=${1:any} )"
+						},{
+							"trigger": "prepend\tfn. (ColdBox:Router)",
+							"contents": "prepend( )"
+						},{
+							"trigger": "append\tfn. (ColdBox:Router)",
+							"contents": "append( )"
+						},{
+							"trigger": "toAction\tfn. (ColdBox:Router)",
+							"contents": "toAction( action=${1:any} )"
+						},{
+							"trigger": "toModuleRouting\tfn. (ColdBox:Router)",
+							"contents": "toModuleRouting( module=${1:any} )"
+						},{
+							"trigger": "toNamespaceRouting\tfn. (ColdBox:Router)",
+							"contents": "toNamespaceRouting( namespace=${1:any} )"
+						},{
+							"trigger": "controller.getColdBoxVersion\tfn. (ColdBox:controller)",
+							"contents": "controller.getColdBoxVersion( )"
 						}]}

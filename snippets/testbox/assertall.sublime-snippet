@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+\$assert.all( [
+	() => ${1:\$assert.isTrue( true )},
+	() => ${2:\$assert.isTrue( true )}
+] )
+]]></content>
+	<tabTrigger>assertall</tabTrigger>
+	<scope>source,text</scope>
+	<description>TestBox Grouped Assertions (7.1+)</description>
+</snippet>
