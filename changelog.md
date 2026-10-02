@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.2.1
+
+- Fixed invalid completion JSON so Sublime Text loads all ColdBox completions
+
 ## v3.2.0
 
 - Updates for latest software versions
